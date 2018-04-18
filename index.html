@@ -1,1 +1,136 @@
-<h1>My Web CV</h1>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Web CV</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <!-- The overlay -->
+        <nav id="myNav" class="overlay">
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <!-- Overlay content -->
+            <div class="overlay-content">
+                <a href="#home">Me</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#porfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+
+    </header>
+
+    <main class="clearfix">
+        <section>
+            <div id="home">
+                <span class="button nav-btn draw meet" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i> Menu</span>
+                <img src="img/cv-photo-500x500.jpg" alt="My face photo" width="180px" height="180px">
+                <h2 class="my-name">jozef</h2>
+                <h1>Marton</h1>
+                <p>Front-End Developer</p>
+                <div class="social">
+                    <ul class="icons">
+                        <li><a href="#"><i class="fa fa-facebook"></i></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="clearfix">
+                    <div class="contact-info">
+                        <h4>Location</h4>
+                        <p>Banská Štiavnica, SVK</p>
+                    </div>
+                    <div class="contact-info">
+                        <h4>Phone</h4>
+                        <p>+421 911 222 333</p>
+                    </div>
+                    <div class="contact-info">
+                        <h4>Email</h4>
+                        <p>jozef.marton@itvkurze.sk</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="o-section">
+        	<div class="header-bg"><i class="fa fa-user" aria-hidden="true"></i></div>
+            <div class="container clearfix" id="about">
+                <div class="container-header">
+                	<h1 class="shadow-title">INTRO</h1>
+                	<h2>Intro</h2>
+                	<h3>Something short about me.</h3>
+                </div>
+
+               	<div class="container-content">
+                	<p>Lorem Ipsum je štandardným výplňovým textom už od 16. storočia, keď neznámy tlačiar zobral sadzobnicu plnú tlačových znakov a pomiešal ich, aby tak vytvoril vzorkovú knihu. Prežil nielen päť storočí, ale aj skok do elektronickej sadzby, a pritom zostal v podstate nezmenený. Spopularizovaný bol v 60-tych rokoch 20.storočia, vydaním hárkov Letraset, ktoré obsahovali pasáže Lorem Ipsum, a neskôr aj publikačným softvérom ako Aldus PageMaker, ktorý obsahoval verzie Lorem Ipsum.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="o-section">
+        	<div class="header-bg"><i class="fa fa-cogs" aria-hidden="true"></i></div>
+            <div class="container" id="skills">
+                <div class="container-header">
+                	<h1 class="shadow-title">SKILLS</h1>
+                	<h2>Skills</h2>
+                	<h3>My skills.</h3>
+                </div>
+
+               	<div class="container-content">
+
+                </div>
+            </div>
+        </section>
+
+        <section class="o-section">
+        	<div class="header-bg"><i class="fa fa-list-ul" aria-hidden="true"></i></div>
+            <div class="container clearfix" id="timeline">
+                <div class="container-header">
+                	<h1 class="shadow-title">TIMELINE</h1>
+                	<h2>Timeline</h2>
+                	<h3>My experiences.</h3>
+                </div>
+
+               	<div class="container-content">
+
+                </div>
+            </div>
+        </section>
+
+        <section class="o-section">
+        	<div class="header-bg"><i class="fa fa-folder-open" aria-hidden="true"></i></div>
+            <div class="container clearfix" id="portfolio">
+                <div class="container-header">
+                	<h1 class="shadow-title">PORTFOLIO</h1>
+                	<h2>Portfolio</h2>
+                	<h3>My portfolio gallery (demo).</h3>
+                </div>
+
+               	<div class="container-content">
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact</h2>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="#" class="button btn-up draw meet"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

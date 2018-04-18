@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700|Montserrat:300,400,500,700&subset=latin-ext');
+@import '_navigation.scss';
+@import '_variables.scss';
+@import '_buttons.scss';
+
+
+
+// ------------------------GENERAL----------------------------
+* {
+    box-sizing: border-box;
+}
+
+// ------------------CLEARFIX------------------------------
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+body {
+    background-color: $color-bg-body;
+    font-family: $font-family-montserrat;
+    color: $color-text;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h4,
+h5,
+h6 {
+    color: $color-text;
+    font-family: $font-family-lato;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h3 {
+	font-weight: 100;
+}
+
+.container {
+    margin: 50px auto;
+    max-width: 1200px;
+
+	.container-header {
+		width: 30%;
+		float: left;
+		text-align: right;
+		margin-right: 30px;
+
+		h2 {
+			font-size: 1.2em;
+		}
+		h3 {
+			font-size: .9em;
+		}
+
+		.shadow-title {
+			position: absolute;
+			left: 12%;
+			top: 8%;
+			text-align: left;
+			font-size: 7em;
+			line-height: 120px;
+			color: rgba(0,0,0,0.08);
+			margin: 0;
+		}
+	}
+
+	.container-content {
+		width: 65%;
+		text-align: left;
+		margin-left: 30px;
+		float: left;
+	}
+
+	p {
+		font-size: 1em;
+	}
+}
+
+
+// --------------------------ICONS---------------------------------
+.icons {
+    text-align: center;
+    padding: 0;
+    margin: 40px 0;
+
+    .fa {
+        width: 20px;
+        height: 20px;
+    }
+
+    li {
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    a {
+        font-size: 22px;
+        color: $color-text;
+        background-color: $icon-color;
+        padding: 10px 15px;
+        border-radius: 2px;
+        margin: 10px;
+    }
+
+    a:hover {
+        color: $color-bg-body;
+        background-color: $color-headings;
+        transition: 0.5s;
+    }
+}
+
+
+
+section {
+    min-height: 50vh;
+    overflow: hidden;
+    display: block;
+    // &:nth-of-type(even) {
+    //     background-color: $color-text;
+    // }
+
+    &.o-section {
+		position: relative;
+
+	#about {
+		z-index: -1;
+	}
+
+	.header-bg {
+		display: block;
+		width: 10%;
+		position: absolute;
+		height: 100%;
+		background-color: $color-headings;
+		z-index: -1;
+		box-shadow: 0px 10px 20px #000;
+		}
+		&:after {
+			content: "";
+			display: block;
+			width: 0;
+			height: 0;
+			position: absolute;
+			left: 10%;
+			top: 70px;
+			border-top: 1em solid transparent;
+		    border-bottom: 1em solid transparent;
+		    border-right: 1em solid transparent;
+		    border-left: 1em solid $color-headings;
+
+		}
+	.fa-user,
+	.fa-cogs,
+	.fa-list-ul,
+	.fa-folder-open {
+			display: block;
+			color: black;
+			font-size: 40px;
+			text-align: center;
+			margin-top: 70px;
+		}
+	}
+    #home {
+        padding: 100px 50px;
+        background-image: url(../img/black-abstract-bg.jpg);
+        text-align: center;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+
+        h1 {
+            font-size: 50px;
+            color: $color-headings;
+            margin: 0;
+            text-shadow: -.8px .8px 0px darken( $color-headings, 15%);
+        }
+        img {
+            border-radius: 50%;
+            margin-bottom: 30px;
+        }
+        hr {
+            background: $color-text;
+            border: 0;
+            height: 1.5px;
+        }
+		.my-name {
+		    text-transform: none;
+		    font-weight: 300;
+		    color: $color-text;
+		    font-size: 40px;
+		    margin: 0;
+		    line-height: .8;
+		}
+        .contact-info {
+		    margin: 40px 0;
+		    display: inline-block;
+		    width: 30%;
+
+		    h4 {
+		        text-transform: none;
+		        color: $color-text;
+		        line-height: .2;
+		    }
+
+		    p {
+		        font-size: 14px;
+    		}
+		}
+    }
+}
+
+
+
+// ------------------------------------TRIANGLE----------------------------------
+
+// .triangle {
+//     height: 50px;
+//     border-left: 33vw solid $color-headings;
+//     border-bottom: 60px solid $color-bg;
+//     border-right: 67vw solid $color-headings;
+
+//     .grey-section & {
+//         border-left: 33vw solid $color-bg;
+//         border-bottom: 60px solid $color-headings;
+//         border-right: 67vw solid $color-bg;
+//     }
+// }
+
+#contact {
+    background-image: url(../img/keyboard-cover.jpg);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+
