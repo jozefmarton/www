@@ -37,48 +37,48 @@ h6 {
 }
 
 h3 {
-	font-weight: 100;
+    font-weight: 100;
 }
 
 .container {
     margin: 50px auto;
     max-width: 1200px;
 
-	.container-header {
-		width: 30%;
-		float: left;
-		text-align: right;
-		margin-right: 30px;
+    .container-header {
+        width: 30%;
+        float: left;
+        text-align: right;
+        margin-right: 30px;
 
-		h2 {
-			font-size: 1.1em;
-		}
-		h3 {
-			font-size: .9em;
-		}
+        h2 {
+            font-size: 1.1em;
+        }
+        h3 {
+            font-size: .9em;
+        }
 
-		.shadow-title {
-			position: absolute;
-			left: 12%;
-			top: 8%;
-			text-align: left;
-			font-size: 7em;
-			line-height: 120px;
-			color: rgba(0,0,0,0.08);
-			margin: 0;
-		}
-	}
+        .shadow-title {
+            position: absolute;
+            left: 12%;
+            top: 8%;
+            text-align: left;
+            font-size: 7em;
+            line-height: 120px;
+            color: rgba(0, 0, 0, 0.08);
+            margin: 0;
+        }
+    }
 
-	.container-content {
-		width: 65%;
-		text-align: left;
-		margin-left: 30px;
-		float: left;
-	}
+    .container-content {
+        width: 65%;
+        text-align: left;
+        margin-left: 30px;
+        float: left;
+    }
 
-	p {
-		font-size: 1em;
-	}
+    p {
+        font-size: 1em;
+    }
 }
 
 
@@ -119,52 +119,50 @@ h3 {
 section {
     min-height: 50vh;
     overflow: hidden;
-    display: block;
-    // &:nth-of-type(even) {
+    display: block; // &:nth-of-type(even) {
     //     background-color: $color-text;
     // }
-
     &.o-section {
-		position: relative;
+        position: relative;
 
-	#about {
-		z-index: -1;
-	}
+        #about {
+            z-index: -1;
+        }
 
-	.header-bg {
-		display: block;
-		width: 10%;
-		position: absolute;
-		height: 100%;
-		background-color: $color-headings;
-		z-index: -1;
-		box-shadow: 0px 10px 20px #000;
-		}
-		&:after {
-			content: "";
-			display: block;
-			width: 0;
-			height: 0;
-			position: absolute;
-			left: 10%;
-			top: 70px;
-			border-top: 1em solid transparent;
-		    border-bottom: 1em solid transparent;
-		    border-right: 1em solid transparent;
-		    border-left: 1em solid $color-headings;
+        .header-bg {
+            display: block;
+            width: 10%;
+            position: absolute;
+            height: 100%;
+            background-color: $color-headings;
+            z-index: -1;
+            box-shadow: 0px 10px 20px #000;
+        }
+        &:after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 0;
+            position: absolute;
+            left: 10%;
+            top: 70px;
+            border-top: 1em solid transparent;
+            border-bottom: 1em solid transparent;
+            border-right: 1em solid transparent;
+            border-left: 1em solid $color-headings;
 
-		}
-	.fa-user,
-	.fa-cogs,
-	.fa-list-ul,
-	.fa-folder-open {
-			display: block;
-			color: black;
-			font-size: 40px;
-			text-align: center;
-			margin-top: 70px;
-		}
-	}
+        }
+        .fa-user,
+        .fa-cogs,
+        .fa-list-ul,
+        .fa-folder-open {
+            display: block;
+            color: black;
+            font-size: 40px;
+            text-align: center;
+            margin-top: 70px;
+        }
+    }
     #home {
         padding: 100px 50px;
         background-image: url(../img/black-abstract-bg.jpg);
@@ -188,54 +186,49 @@ section {
             border: 0;
             height: 1.5px;
         }
-		.my-name {
-		    text-transform: none;
-		    font-weight: 300;
-		    color: $color-text;
-		    font-size: 40px;
-		    margin: 0;
-		    line-height: .8;
-		}
+        .my-name {
+            text-transform: none;
+            font-weight: 300;
+            color: $color-text;
+            font-size: 40px;
+            margin: 0;
+            line-height: .8;
+        }
         .contact-info {
-		    margin: 40px 0;
-		    display: inline-block;
-		    width: 30%;
+            margin: 40px 0;
+            display: inline-block;
+            width: 30%;
 
-		    h4 {
-		        text-transform: none;
-		        color: $color-text;
-		        line-height: .2;
-		    }
+            h4 {
+                text-transform: none;
+                color: $color-text;
+                line-height: .2;
+            }
 
-		    p {
-		        font-size: 14px;
-    		}
-		}
+            p {
+                font-size: 14px;
+            }
+        }
     }
 }
 
 
 
 // ------------------------------------TRIANGLE----------------------------------
-
 // .triangle {
 //     height: 50px;
 //     border-left: 33vw solid $color-headings;
 //     border-bottom: 60px solid $color-bg;
 //     border-right: 67vw solid $color-headings;
-
 //     .grey-section & {
 //         border-left: 33vw solid $color-bg;
 //         border-bottom: 60px solid $color-headings;
 //         border-right: 67vw solid $color-bg;
 //     }
 // }
-
 #contact {
     background-image: url(../img/keyboard-cover.jpg);
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
 }
-
-
