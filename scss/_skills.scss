@@ -1,0 +1,50 @@
+// -----------------------------MY SKILLS SECTION------------------------
+
+.skills {
+	.bar-content {
+		width: 50%;
+		float: left;
+		margin: 0 0 3.4em 0;
+		.bar-header {
+			h4 {
+				margin: 0;
+				display: inline-block;
+				margin-right: 1em;
+				margin-bottom: .5em;
+
+				&:first-of-type {
+					color: $color-headings;
+					font-size: 1.2em;
+				}
+			}
+		}
+		.progress-bar {
+			background-color: $color-text;
+			 width: 90%;
+			height: 6px;
+
+			.progress {
+				background-color: $color-headings;
+				height: 6px;
+			}
+			.html {
+				width: 90%;
+			}
+			.css {
+				width: 80%;
+			}
+			.sass {
+				width: 60%;
+			}
+			.javascript {
+				width: 50%;
+			}
+			.bootstrap {
+				width: 70%;
+			}
+			.photoshop {
+				width: 80%;
+			}
+		}
+	}
+}

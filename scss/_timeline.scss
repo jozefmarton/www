@@ -1,0 +1,59 @@
+// ------------------------------------------TIMELINE-----------------------------------
+
+.timeline {
+	.row {
+		.timeline-container {
+			border-left: 2px solid $color-text;
+			position: relative;
+			// overflow: auto;
+			padding: .1em 0;
+
+			.fa-circle {
+				color: $color-headings;
+				position: absolute;
+				left: -7px;
+				top: .3em;
+				overflow: none;
+			}
+		}
+
+		article {
+			margin: 0 0 4em 2em;
+
+
+			// -------------NECHCE ZOBRAZIT--------------
+			// &:before {
+			// 	content: "";
+			// 	display: block;
+			// 	width: 1em;
+			// 	height: 1em;
+			// 	color: $color-headings;
+			// 	position: absolute;
+			// 	border-radius: .5em;
+			// 	left: -.55em;
+			// 	}
+
+			h3 {
+				color: $color-headings;
+				margin: 0;
+
+				&:nth-of-type(even) {
+					font-size: 1.6em;
+					margin-bottom: .5em
+				}
+
+				&:nth-of-type(odd) {
+					margin-bottom: .2em;
+					font-weight: 400;
+					font-size: .9em;
+				}
+			}
+
+			p {
+				margin: 0;
+				padding-left: 1em;
+				border-left: 1px solid $color-text;
+			}
+		}
+	}
+}
