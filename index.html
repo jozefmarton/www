@@ -29,7 +29,7 @@
 			<section>
 				<div id="home">
 					<span class="button nav-btn draw meet" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i> Menu</span>
-					<img data-aos="fade-down" data-aos-duration="600"  data-aos-delay="400" src="img/cv-photo-500x500.jpg" alt="My face photo" width="180px" height="180px">
+					<img data-aos="fade-down" data-aos-duration="600"  data-aos-delay="400" src="img/cv-photo-500x500.jpg" alt="My face photo" width="210px" height="210px">
 					<h2 data-aos="fade-down" data-aos-duration="800"  data-aos-delay="400" class="my-name">jozef</h2>
 					<h1 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="400" >Marton</h1>
 					<p data-aos="fade-down" data-aos-duration="1200" data-aos-delay="400" >Front-End Developer</p>
@@ -39,21 +39,6 @@
 							<li data-aos="fade-down" data-aos-duration="1200" data-aos-delay="400"><a href="#"><i class="fa fa-instagram"></i></a></li>
 							<li data-aos="fade-down" data-aos-duration="1200" data-aos-delay="400"><a href="#"><i class="fa fa-linkedin"></i></a></li>
 						</ul>
-					</div>
-					<hr>
-					<div class="clearfix">
-						<div class="contact-info" data-aos="fade-up" data-aos-duration="600">
-							<h4>Location</h4>
-							<p>Banská Štiavnica, SVK</p>
-						</div>
-						<div class="contact-info" data-aos="fade-up" data-aos-duration="800">
-							<h4>Phone</h4>
-							<p>+421 911 222 333</p>
-						</div>
-						<div class="contact-info" data-aos="fade-up" data-aos-duration="1000">
-							<h4>Email</h4>
-							<p>jozef.marton@itvkurze.sk</p>
-						</div>
 					</div>
 				</div>
 			</section>
@@ -141,12 +126,12 @@
 			<section class="o-section" id="timeline">
 				<div class="header-bg"><i class="fa fa-list-ul" aria-hidden="true"></i></div>
 				<div class="container clearfix" >
-					<div class="container-header" data-aos="fade-right" data-aos-duration="600" data-aos-delay="200">
+					<div class="container-header" data-aos="fade-right" data-aos-duration="800" data-aos-delay="400">
 						<h1 class="shadow-title">TIMELINE</h1>
 						<h2>Timeline</h2>
 						<h3>My experiences.</h3>
 					</div>
-					<div class="timeline container-content" data-aos="fade-down" data-aos-duration="600" data-aos-delay="200">
+					<div class="timeline container-content" data-aos="fade-down" data-aos-duration="800" data-aos-delay="400">
 						<div class="row">
 							<div class="timeline-container">
 								<i class="fa fa-circle" aria-hidden="true"></i>
@@ -204,19 +189,113 @@
 						<h3>My portfolio gallery (demo).</h3>
 					</div>
 					<div class="container-content">
+						<div class="gallery">
+							<div class="row">
+								<div class="gl-image">
+									<a href="img/ack-1280x850.jpg">
+										<img src="img/ack-1280x850.jpg" alt="nantucket" width="380px" height="240">
+										<div class="img-content">
+											<h4>Nantucket</h4>
+											<div class="yellow-line"></div>
+											<p>2017</p>
+										</div>
+									</a>
+								</div>
+
+								<div class="gl-image">
+									<a href="img/athens1280x853.jpg" target="_blank">
+										<img src="img/athens1280x853.jpg" alt="athens" width="380px" height="240">
+										<div class="img-content">
+											<h4>Athens</h4>
+											<div class="yellow-line"></div>
+											<p>2015</p>
+										</div>
+									</a>
+								</div>
+
+								<div class="gl-image">
+									<a href="img/berlin-1280x920.jpg">
+										<img src="img/berlin-1280x920.jpg" alt="berlin" width="380px" height="240">
+										<div class="img-content">
+											<h4>Berlin</h4>
+											<div class="yellow-line"></div>
+											<p>2018</p>
+										</div>
+									</a>
+								</div>
+
+								<div class="gl-image">
+									<a href="img/dubai-1280.jpg">
+										<img src="img/dubai-1280.jpg" alt="dubai" width="380px" height="240">
+										<div class="img-content">
+											<h4>Dubai</h4>
+											<div class="yellow-line"></div>
+											<p>2016</p>
+										</div>
+									</a>
+								</div>
+
+								<div class="gl-image">
+									<a href="img/new-york-1280x853.jpg">
+										<img src="img/new-york-1280x853.jpg" alt="new york" width="380px" height="240">
+										<div class="img-content">
+											<h4>New York</h4>
+											<div class="yellow-line"></div>
+											<p>2015</p>
+										</div>
+									</a>
+								</div>
+
+								<div class="gl-image">
+									<a href="img/yucatan-1280.jpg">
+										<img src="img/yucatan-1280.jpg" alt="yucatan" width="380px" height="240">
+										<div class="img-content">
+											<h4>Yucatan</h4>
+											<div class="yellow-line"></div>
+											<p>2016</p>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
+
+<!-- CONTACT SECTION -->
 
 			<section class="o-section" id="contact">
 				<div class="header-bg"><i class="fa fa-paper-plane" aria-hidden="true"></i></div>
 					<div class="container clearfix" >
 						<div class="container-header">
-							<h1 class="shadow-title">CONTACT</h1>
+							<!-- <h1 class="shadow-title">CONTACT</h1> -->
 							<h2>Contact</h2>
 							<h3>Contact me.</h3>
 						</div>
 						<div class="container-content">
+							<form action="#" method="get" class="contact-form">
+								<input type="text" name="name" placeholder="Your name" required="required">
+								<input type="email" name="email" placeholder="@" required="required">
+								<textarea name="message" rows="6" placeholder="Your message"></textarea>
+								<button class="send-btn">Send</button>
+							</form>
+
+							<hr>
+
+							<div class="contact-content">
+								<div class="contact-info">
+									<h4>Location</h4>
+									<p>Banská Štiavnica, SVK</p>
+								</div>
+								<div class="contact-info">
+									<h4>Phone</h4>
+									<a href="tel:+421 911 222 333" target="_blank">+421 911 222 333</a>
+								</div>
+								<div class="contact-info">
+									<h4>Email</h4>
+									<a href="mailto:jozef.marton@itvkurze.sk" target="_blank">jozef.marton@itvkurze.sk</a>
+								</div>
+							</div>
 						</div>
 					</div>
 			</section>
@@ -230,7 +309,7 @@
 		</main>
 
 		<footer>
-			<a href="#" class="button btn-up draw meet"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a>
+			<a href="#" class="button btn-up sticky-nav draw meet"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a>
 		</footer>
 
 		<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>

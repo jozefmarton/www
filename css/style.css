@@ -115,73 +115,79 @@
   padding: 0 11px;
 }
 
-/* line 46, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
+/* line 43, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
+.btn-up .sticky-nav {
+  bottom: 10px;
+  pointer-events: auto;
+}
+
+/* line 52, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
 .draw {
   transition: color 0.25s;
 }
 
-/* line 49, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
+/* line 55, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
 .draw::before, .draw::after {
   border: 2px solid transparent;
   width: 0;
   height: 0;
 }
 
-/* line 57, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
+/* line 63, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
 .draw::before {
   top: 0;
   left: 0;
 }
 
-/* line 62, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
+/* line 68, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
 .draw::after {
   bottom: 0;
   right: 0;
 }
 
-/* line 67, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
+/* line 73, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
 .draw:hover {
   color: #a0a1a2;
 }
 
-/* line 71, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
+/* line 77, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
 .draw:hover::before, .draw:hover::after {
   width: 100%;
   height: 100%;
 }
 
-/* line 77, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
+/* line 83, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
 .draw:hover::before {
   border-top-color: #a0a1a2;
   border-right-color: #a0a1a2;
   transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
 }
 
-/* line 85, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
+/* line 91, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
 .draw:hover::after {
   border-bottom-color: #a0a1a2;
   border-left-color: #a0a1a2;
   transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
 }
 
-/* line 98, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
+/* line 104, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
 .meet:hover {
   color: #e0a80d;
 }
 
-/* line 103, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
+/* line 109, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
 .meet::after {
   top: 0;
   left: 0;
 }
 
-/* line 109, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
+/* line 115, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
 .meet:hover::before {
   border-top-color: #e0a80d;
   border-right-color: #e0a80d;
 }
 
-/* line 114, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
+/* line 120, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
 .meet:hover::after {
   border-bottom-color: #e0a80d;
   border-left-color: #e0a80d;
@@ -299,28 +305,208 @@
   width: 80%;
 }
 
-/* line 11, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 1, C:/Users/Dodo/Desktop/WEBCV/scss/_contact.scss */
+#contact {
+  background-image: url(../img/keyboard-cover.jpg);
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+}
+
+/* line 7, C:/Users/Dodo/Desktop/WEBCV/scss/_contact.scss */
+#contact hr {
+  background: #a0a1a2;
+  border: 0;
+  height: 1.5px;
+  margin: 50px 0;
+}
+
+/* line 15, C:/Users/Dodo/Desktop/WEBCV/scss/_contact.scss */
+#contact .contact-form input,
+#contact .contact-form textarea {
+  border: none;
+  color: #a0a1a2;
+  font-family: "Montserrat", sans-serif;
+  background-color: #000;
+  padding: 1em;
+  margin-bottom: 2em;
+  width: 48%;
+  opacity: .6;
+}
+
+/* line 27, C:/Users/Dodo/Desktop/WEBCV/scss/_contact.scss */
+#contact .contact-form input::placeholder,
+#contact .contact-form textarea::placeholder {
+  font-size: 1.2em;
+  color: #a0a1a2;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* line 33, C:/Users/Dodo/Desktop/WEBCV/scss/_contact.scss */
+#contact .contact-form input:focus, #contact .contact-form input:hover,
+#contact .contact-form textarea:focus,
+#contact .contact-form textarea:hover {
+  outline: none;
+  box-shadow: 0 0 5px #000;
+  transition: .5s;
+}
+
+/* line 41, C:/Users/Dodo/Desktop/WEBCV/scss/_contact.scss */
+#contact .contact-form input {
+  margin-right: 2em;
+}
+
+/* line 43, C:/Users/Dodo/Desktop/WEBCV/scss/_contact.scss */
+#contact .contact-form input:last-of-type {
+  margin-right: 0;
+}
+
+/* line 48, C:/Users/Dodo/Desktop/WEBCV/scss/_contact.scss */
+#contact .contact-form textarea {
+  width: 100%;
+}
+
+/* line 52, C:/Users/Dodo/Desktop/WEBCV/scss/_contact.scss */
+#contact .contact-form .send-btn {
+  color: #2d2e2e;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  background-color: #e0a80d;
+  height: 2em;
+  width: 30%;
+  cursor: pointer;
+}
+
+/* line 64, C:/Users/Dodo/Desktop/WEBCV/scss/_contact.scss */
+#contact .contact-form .send-btn:hover {
+  box-shadow: 0 0 5px #e0a80d;
+  transition: .5s;
+}
+
+/* line 73, C:/Users/Dodo/Desktop/WEBCV/scss/_contact.scss */
+#contact .contact-content .contact-info {
+  display: inline-block;
+  text-align: center;
+  width: 32%;
+}
+
+/* line 77, C:/Users/Dodo/Desktop/WEBCV/scss/_contact.scss */
+#contact .contact-content .contact-info h4 {
+  font-size: 1.2em;
+  text-transform: none;
+  color: #a0a1a2;
+  margin: 0 0 .5em 0;
+}
+
+/* line 84, C:/Users/Dodo/Desktop/WEBCV/scss/_contact.scss */
+#contact .contact-content .contact-info p {
+  font-size: 1em;
+}
+
+/* line 3, C:/Users/Dodo/Desktop/WEBCV/scss/_gallery.scss */
+.gallery .row .gl-image {
+  position: relative;
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+/* line 8, C:/Users/Dodo/Desktop/WEBCV/scss/_gallery.scss */
+.gallery .row .gl-image img {
+  box-shadow: 0px 4px 8px #000;
+}
+
+/* line 12, C:/Users/Dodo/Desktop/WEBCV/scss/_gallery.scss */
+.gallery .row .gl-image:nth-of-type(even) {
+  margin-right: 0;
+}
+
+/* line 16, C:/Users/Dodo/Desktop/WEBCV/scss/_gallery.scss */
+.gallery .row .gl-image a {
+  display: block;
+  filter: grayscale(100%);
+}
+
+/* line 20, C:/Users/Dodo/Desktop/WEBCV/scss/_gallery.scss */
+.gallery .row .gl-image a:hover {
+  transform: scale(1.03);
+  filter: grayscale(0%);
+  transition: .8s;
+}
+
+/* line 26, C:/Users/Dodo/Desktop/WEBCV/scss/_gallery.scss */
+.gallery .row .gl-image a .img-content {
+  display: block;
+  position: absolute;
+  padding-left: 2em;
+  top: 0;
+  text-align: left;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 36, C:/Users/Dodo/Desktop/WEBCV/scss/_gallery.scss */
+.gallery .row .gl-image a .img-content:hover {
+  opacity: 1;
+  transition: 1s;
+}
+
+/* line 41, C:/Users/Dodo/Desktop/WEBCV/scss/_gallery.scss */
+.gallery .row .gl-image a .img-content .yellow-line {
+  margin: 5px 0;
+  width: 100px;
+  height: 5px;
+  background-color: #e0a80d;
+}
+
+/* line 48, C:/Users/Dodo/Desktop/WEBCV/scss/_gallery.scss */
+.gallery .row .gl-image a .img-content h4,
+.gallery .row .gl-image a .img-content p {
+  color: #fff;
+  font-size: 2em;
+  margin: 0;
+  text-shadow: 0 2px 7px #000;
+}
+
+/* line 55, C:/Users/Dodo/Desktop/WEBCV/scss/_gallery.scss */
+.gallery .row .gl-image a .img-content h4:first-child,
+.gallery .row .gl-image a .img-content p:first-child {
+  margin-top: 2em;
+}
+
+/* line 59, C:/Users/Dodo/Desktop/WEBCV/scss/_gallery.scss */
+.gallery .row .gl-image a .img-content h4:last-child,
+.gallery .row .gl-image a .img-content p:last-child {
+  font-size: 1.5em;
+}
+
+/* line 13, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 * {
   box-sizing: border-box;
 }
 
-/* line 16, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 18, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 .clearfix::after {
   content: "";
   clear: both;
   display: table;
 }
 
-/* line 22, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 24, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 body {
   background-color: #2d2e2e;
   font-family: "Montserrat", sans-serif;
   color: #a0a1a2;
   margin: 0;
   padding: 0;
+  font-size: 16px;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
-/* line 30, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 34, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 h1,
 h2,
 h4,
@@ -332,18 +518,30 @@ h6 {
   text-transform: uppercase;
 }
 
-/* line 41, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 45, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 h3 {
   font-weight: 100;
 }
 
-/* line 45, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 49, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+a {
+  color: #a0a1a2;
+  text-decoration: none;
+}
+
+/* line 53, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+a:hover, a:active, a:focus {
+  color: #e0a80d;
+  transition: .5s;
+}
+
+/* line 61, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 .container {
   margin: 50px auto;
   max-width: 1200px;
 }
 
-/* line 49, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 65, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 .container .container-header {
   width: 30%;
   float: left;
@@ -351,60 +549,60 @@ h3 {
   margin-right: 30px;
 }
 
-/* line 55, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 71, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 .container .container-header h2 {
   font-size: 1.2em;
   margin: 0;
 }
 
-/* line 59, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 75, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 .container .container-header h3 {
   font-size: .9em;
 }
 
-/* line 63, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 79, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 .container .container-header .shadow-title {
   position: absolute;
   left: 12%;
   top: 8%;
   text-align: left;
-  font-size: 7em;
+  font-size: 9em;
   line-height: 120px;
   color: rgba(0, 0, 0, 0.08);
   margin: 0;
+  z-index: -1;
 }
 
-/* line 75, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 92, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 .container .container-content {
   width: 65%;
-  text-align: left;
   margin-left: 30px;
   float: left;
 }
 
-/* line 82, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 98, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 .container p {
   font-size: 1em;
   margin: 0;
 }
 
-/* line 89, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 105, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 section {
   overflow: hidden;
   display: block;
 }
 
-/* line 93, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 109, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 section:nth-of-type(odd) {
   background-color: #2b2c2c;
 }
 
-/* line 97, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 114, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 section.o-section {
   position: relative;
 }
 
-/* line 100, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 117, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 section.o-section .header-bg {
   display: block;
   width: 10%;
@@ -414,7 +612,7 @@ section.o-section .header-bg {
   box-shadow: 0px 0px 10px #000;
 }
 
-/* line 108, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 125, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 section.o-section:after {
   content: "";
   display: block;
@@ -429,7 +627,7 @@ section.o-section:after {
   filter: drop-shadow 5px 5px 10px #000;
 }
 
-/* line 122, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 139, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 section.o-section .fa-user,
 section.o-section .fa-cogs,
 section.o-section .fa-list-ul,
@@ -442,9 +640,9 @@ section.o-section .fa-paper-plane {
   margin-top: 70px;
 }
 
-/* line 135, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 152, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 section #home {
-  max-height: 100vh;
+  min-height: 100vh;
   padding: 100px 25px;
   background-image: url(../img/black-abstract-bg.jpg);
   text-align: center;
@@ -453,98 +651,68 @@ section #home {
   background-attachment: fixed;
 }
 
-/* line 144, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 161, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 section #home h1 {
-  font-size: 60px;
+  font-size: 80px;
   color: #e0a80d;
   margin: 0;
   text-shadow: -0.8px 0.8px 0px #987209;
 }
 
-/* line 150, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 168, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+section #home p {
+  font-size: 1.5em;
+}
+
+/* line 171, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 section #home img {
   border-radius: 50%;
   margin-bottom: 30px;
 }
 
-/* line 154, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
-section #home hr {
-  background: #a0a1a2;
-  border: 0;
-  height: 1.5px;
-}
-
-/* line 159, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 175, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 section #home .my-name {
   text-transform: none;
   font-weight: 300;
   color: #a0a1a2;
-  font-size: 50px;
+  font-size: 70px;
   margin: 0;
   line-height: .8;
 }
 
-/* line 167, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
-section #home .contact-info {
-  margin: 40px 0;
-  display: inline-block;
-  width: 30%;
-}
-
-/* line 172, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
-section #home .contact-info h4 {
-  text-transform: none;
-  color: #a0a1a2;
-  line-height: .2;
-}
-
-/* line 178, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
-section #home .contact-info p {
-  font-size: 14px;
-}
-
-/* line 186, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 187, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 .icons {
   text-align: center;
   padding: 0;
   margin: 40px 0;
 }
 
-/* line 191, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 192, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 .icons .fa {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 }
 
-/* line 196, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 197, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 .icons li {
   text-decoration: none;
   display: inline-block;
 }
 
-/* line 201, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 202, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 .icons a {
-  font-size: 22px;
+  font-size: 2em;
   color: #a0a1a2;
   background-color: #3f4040;
-  padding: 10px 15px;
-  margin: 10px;
+  padding: 15px 20px;
+  margin: 15px;
 }
 
-/* line 209, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 210, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 .icons a:hover {
   color: #2d2e2e;
   background-color: #e0a80d;
   transition: 0.5s;
-}
-
-/* line 216, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
-#contact {
-  background-image: url(../img/keyboard-cover.jpg);
-  background-size: cover;
-  background-position: top;
-  background-attachment: fixed;
-  z-index: -1;
 }
 
 /*# sourceMappingURL=../css/style.map */

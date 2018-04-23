@@ -4,6 +4,8 @@
 @import 'buttons';
 @import 'timeline';
 @import 'skills';
+@import 'contact';
+@import 'gallery';
 
 
 
@@ -25,6 +27,8 @@ body {
     color: $color-text;
     margin: 0;
     padding: 0;
+    font-size: 16px;
+    -webkit-font-smoothing: subpixel-antialiased;
 }
 
 h1,
@@ -40,6 +44,18 @@ h6 {
 
 h3 {
     font-weight: 100;
+}
+
+a {
+	color: $color-text;
+	text-decoration: none;
+
+	&:hover,
+	&:active,
+	&:focus {
+		color: $color-headings;
+		transition: .5s;
+	}
 }
 
 .container {
@@ -65,16 +81,16 @@ h3 {
             left: 12%;
             top: 8%;
             text-align: left;
-            font-size: 7em;
+            font-size: 9em;
             line-height: 120px;
             color: rgba(0, 0, 0, 0.08);
             margin: 0;
+            z-index: -1;
         }
     }
 
     .container-content {
         width: 65%;
-        text-align: left;
         margin-left: 30px;
         float: left;
     }
@@ -92,6 +108,7 @@ section {
 
     &:nth-of-type(odd) {
         background-color: $color-bg;
+        // z-index: -2;
     }
 
     &.o-section {
@@ -133,7 +150,7 @@ section {
     }
 
     #home {
-        max-height: 100vh;
+        min-height: 100vh;
         padding: 100px 25px;
         background-image: url(../img/black-abstract-bg.jpg);
         text-align: center;
@@ -142,42 +159,26 @@ section {
         background-attachment: fixed;
 
         h1 {
-            font-size: 60px;
+            font-size: 80px;
             color: $color-headings;
             margin: 0;
             text-shadow: -.8px .8px 0px darken( $color-headings, 15%);
+        }
+
+        p {
+        	font-size: 1.5em;
         }
         img {
             border-radius: 50%;
             margin-bottom: 30px;
         }
-        hr {
-            background: $color-text;
-            border: 0;
-            height: 1.5px;
-        }
         .my-name {
             text-transform: none;
             font-weight: 300;
             color: $color-text;
-            font-size: 50px;
+            font-size: 70px;
             margin: 0;
             line-height: .8;
-        }
-        .contact-info {
-            margin: 40px 0;
-            display: inline-block;
-            width: 30%;
-
-            h4 {
-                text-transform: none;
-                color: $color-text;
-                line-height: .2;
-            }
-
-            p {
-                font-size: 14px;
-            }
         }
     }
 }
@@ -189,8 +190,8 @@ section {
     margin: 40px 0;
 
     .fa {
-        width: 20px;
-        height: 20px;
+        width: 30px;
+        height: 30px;
     }
 
     li {
@@ -199,11 +200,11 @@ section {
     }
 
     a {
-        font-size: 22px;
+        font-size: 2em;
         color: $color-text;
         background-color: $icon-color;
-        padding: 10px 15px;
-        margin: 10px;
+        padding: 15px 20px;
+        margin: 15px;
     }
 
     a:hover {
@@ -211,12 +212,4 @@ section {
         background-color: $color-headings;
         transition: 0.5s;
     }
-}
-
-#contact {
-    background-image: url(../img/keyboard-cover.jpg);
-    background-size: cover;
-    background-position: top;
-    background-attachment: fixed;
-    z-index: -1;
 }

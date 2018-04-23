@@ -1,0 +1,94 @@
+#contact {
+    background-image: url(../img/keyboard-cover.jpg);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+
+     hr {
+            background: $color-text;
+            border: 0;
+            height: 1.5px;
+            margin: 50px 0;
+        }
+
+	.contact-form {
+		input,
+		textarea {
+			border:none;
+			color: $color-text;
+			font-family: $font-family-montserrat;
+			background-color: #000;
+			// border: 1px solid $color-headings;
+			padding: 1em;
+			margin-bottom: 2em;
+			width: 48%;
+			opacity: .6;
+
+			&::placeholder {
+				font-size: 1.2em;
+				color: $color-text;
+				font-family: $font-family-montserrat;
+			}
+
+			&:focus,
+			&:hover {
+				outline: none;
+				box-shadow: 0 0 5px #000;
+				transition: .5s;
+			}
+		}
+
+		input {
+			margin-right: 2em;
+			&:last-of-type {
+				margin-right: 0;
+			}
+		}
+
+		textarea {
+			width: 100%;
+		}
+
+		.send-btn {
+			color: $color-bg-body;
+			font-family: $font-family-montserrat;
+			font-size: 1.5em;
+			font-weight: bold;
+			text-transform: uppercase;
+			border: none;
+			background-color: $color-headings;
+			height: 2em;
+			width: 30%;
+			cursor: pointer;
+
+			&:hover {
+				box-shadow: 0 0 5px $color-headings;
+				transition: .5s;
+			}
+		}
+	}
+
+	.contact-content {
+
+		.contact-info {
+			display: inline-block;
+			text-align: center;
+			width: 32%;
+		        h4 {
+		        	font-size: 1.2em;
+		            text-transform: none;
+		            color: $color-text;
+		            margin: 0 0 .5em 0;
+		        }
+
+		        p {
+		            font-size: 1em;
+		        }
+		    }
+		}
+    }
+
+
+
+
+
