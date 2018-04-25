@@ -1,61 +1,45 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700|Montserrat:300,400,500,700&subset=latin-ext");
 /* line 5, C:/Users/Dodo/Desktop/WEBCV/scss/_navigation.scss */
 .overlay {
-  /* Height & width depends on how you want to reveal the overlay (see JS below) */
   height: 100%;
   width: 0;
   position: fixed;
-  /* Stay in place */
-  z-index: 1;
-  /* Sit on top */
+  z-index: 2;
   left: 0;
   top: 0;
   background-color: #e0a80d;
-  /* Black fallback color */
   background-color: rgba(224, 168, 13, 0.9);
-  /* Black w/opacity */
   overflow-x: hidden;
   /* Disable horizontal scroll */
   transition: 0.5s;
-  /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-  /* Position the content inside the overlay */
 }
 
-/* line 24, C:/Users/Dodo/Desktop/WEBCV/scss/_navigation.scss */
+/* line 17, C:/Users/Dodo/Desktop/WEBCV/scss/_navigation.scss */
 .overlay .overlay-content {
   position: relative;
   top: 25%;
-  /* 25% from the top */
-  width: 100%;
-  /* 100% width */
   text-align: center;
-  /* Centered text/links */
   margin-top: 30px;
-  /* 30px top margin to avoid conflict with the close button on smaller screens */
+  margin: 0 auto;
 }
 
-/* The navigation links inside the overlay */
-/* line 39, C:/Users/Dodo/Desktop/WEBCV/scss/_navigation.scss */
+/* line 26, C:/Users/Dodo/Desktop/WEBCV/scss/_navigation.scss */
 .overlay a {
   padding: 8px;
-  text-decoration: none;
   font-size: 36px;
-  color: #2d2e2e;
+  color: #2b2c2c;
   display: block;
-  /* Display block instead of inline */
   transition: 0.5s;
-  /* Transition effects on hover (color) */
 }
 
-/* When you mouse over the navigation links, change their color */
-/* line 52, C:/Users/Dodo/Desktop/WEBCV/scss/_navigation.scss */
-.overlay a:hover,
-.overlay a:focus {
+/* line 33, C:/Users/Dodo/Desktop/WEBCV/scss/_navigation.scss */
+.overlay a:hover, .overlay a:focus {
   color: #3f4040;
+  border-left: 5px solid #3f4040;
+  border-right: 5px solid #3f4040;
 }
 
-/* Position the close button (top right corner) */
-/* line 59, C:/Users/Dodo/Desktop/WEBCV/scss/_navigation.scss */
+/* line 41, C:/Users/Dodo/Desktop/WEBCV/scss/_navigation.scss */
 .overlay .closebtn {
   position: absolute;
   top: 20px;
@@ -63,13 +47,18 @@
   font-size: 60px;
 }
 
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+/* line 47, C:/Users/Dodo/Desktop/WEBCV/scss/_navigation.scss */
+.overlay .closebtn:hover {
+  border-left: none;
+  border-right: none;
+}
+
 @media screen and (max-height: 450px) {
-  /* line 69, C:/Users/Dodo/Desktop/WEBCV/scss/_navigation.scss */
+  /* line 56, C:/Users/Dodo/Desktop/WEBCV/scss/_navigation.scss */
   .overlay a {
     font-size: 20px;
   }
-  /* line 72, C:/Users/Dodo/Desktop/WEBCV/scss/_navigation.scss */
+  /* line 59, C:/Users/Dodo/Desktop/WEBCV/scss/_navigation.scss */
   .overlay .closebtn {
     font-size: 40px;
     top: 15px;
@@ -78,25 +67,45 @@
 }
 
 /* line 7, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
-.button {
+.btn {
   cursor: pointer;
   color: #a0a1a2;
   background-color: transparent;
-  box-shadow: inset 0 0 0 2px #a0a1a2;
+  overflow: hidden;
+  z-index: 1;
 }
 
-/* line 13, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
-.button::before, .button::after {
-  box-sizing: inherit;
-  content: '';
+/* line 14, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
+.btn:hover {
+  color: #2b2c2c;
+  border-bottom: 1.5px solid #e0a80d;
+}
+
+/* line 17, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
+.btn:hover:after {
+  left: 0;
+  opacity: 1;
+}
+
+/* line 22, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
+.btn:after {
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
+  display: block;
+  top: 0;
+  left: -100%;
+  background-color: #e0a80d;
+  opacity: 0;
+  transition: all .4s ease;
+  z-index: -1;
 }
 
-/* line 25, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
-.nav-btn {
-  font-size: 18px;
+/* line 40, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
+.btn-nav {
+  font-size: 1.5em;
+  border-bottom: 1.5px solid #a0a1a2;
   position: absolute;
   left: 0px;
   top: 0px;
@@ -106,92 +115,26 @@
   font-weight: 700;
 }
 
-/* line 36, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
-.btn-up {
-  font-size: 40px;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 0 11px;
-}
-
-/* line 43, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
-.btn-up .sticky-nav {
-  bottom: 10px;
-  pointer-events: auto;
-}
-
 /* line 52, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
-.draw {
-  transition: color 0.25s;
+.btn-up {
+  font-size: 50px;
+  position: fixed;
+  bottom: -100px;
+  right: 20px;
+  padding: 0 15px;
+  text-shadow: 0 0 6px #000;
+  transition: all .5s ease;
 }
 
-/* line 55, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
-.draw::before, .draw::after {
-  border: 2px solid transparent;
-  width: 0;
-  height: 0;
+/* line 60, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
+.sticky-btn .btn-up {
+  bottom: 20px;
 }
 
-/* line 63, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
-.draw::before {
-  top: 0;
-  left: 0;
-}
-
-/* line 68, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
-.draw::after {
-  bottom: 0;
-  right: 0;
-}
-
-/* line 73, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
-.draw:hover {
-  color: #a0a1a2;
-}
-
-/* line 77, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
-.draw:hover::before, .draw:hover::after {
-  width: 100%;
-  height: 100%;
-}
-
-/* line 83, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
-.draw:hover::before {
-  border-top-color: #a0a1a2;
-  border-right-color: #a0a1a2;
-  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
-}
-
-/* line 91, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
-.draw:hover::after {
-  border-bottom-color: #a0a1a2;
-  border-left-color: #a0a1a2;
-  transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
-}
-
-/* line 104, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
-.meet:hover {
-  color: #e0a80d;
-}
-
-/* line 109, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
-.meet::after {
-  top: 0;
-  left: 0;
-}
-
-/* line 115, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
-.meet:hover::before {
-  border-top-color: #e0a80d;
-  border-right-color: #e0a80d;
-}
-
-/* line 120, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
-.meet:hover::after {
-  border-bottom-color: #e0a80d;
-  border-left-color: #e0a80d;
-  transition: height 0.25s ease-out, width 0.25s ease-out 0.25s;
+/* line 64, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
+.btn-up:hover {
+  border: none;
+  text-shadow: none;
 }
 
 /* line 5, C:/Users/Dodo/Desktop/WEBCV/scss/_timeline.scss */
@@ -411,32 +354,33 @@
   position: relative;
   float: left;
   margin: 0 20px 20px 0;
+  z-index: 2;
 }
 
-/* line 8, C:/Users/Dodo/Desktop/WEBCV/scss/_gallery.scss */
+/* line 9, C:/Users/Dodo/Desktop/WEBCV/scss/_gallery.scss */
 .gallery .row .gl-image img {
   box-shadow: 0px 4px 8px #000;
 }
 
-/* line 12, C:/Users/Dodo/Desktop/WEBCV/scss/_gallery.scss */
+/* line 13, C:/Users/Dodo/Desktop/WEBCV/scss/_gallery.scss */
 .gallery .row .gl-image:nth-of-type(even) {
   margin-right: 0;
 }
 
-/* line 16, C:/Users/Dodo/Desktop/WEBCV/scss/_gallery.scss */
+/* line 17, C:/Users/Dodo/Desktop/WEBCV/scss/_gallery.scss */
 .gallery .row .gl-image a {
   display: block;
   filter: grayscale(100%);
 }
 
-/* line 20, C:/Users/Dodo/Desktop/WEBCV/scss/_gallery.scss */
+/* line 21, C:/Users/Dodo/Desktop/WEBCV/scss/_gallery.scss */
 .gallery .row .gl-image a:hover {
   transform: scale(1.03);
   filter: grayscale(0%);
   transition: .8s;
 }
 
-/* line 26, C:/Users/Dodo/Desktop/WEBCV/scss/_gallery.scss */
+/* line 27, C:/Users/Dodo/Desktop/WEBCV/scss/_gallery.scss */
 .gallery .row .gl-image a .img-content {
   display: block;
   position: absolute;
@@ -448,13 +392,13 @@
   height: 100%;
 }
 
-/* line 36, C:/Users/Dodo/Desktop/WEBCV/scss/_gallery.scss */
+/* line 37, C:/Users/Dodo/Desktop/WEBCV/scss/_gallery.scss */
 .gallery .row .gl-image a .img-content:hover {
   opacity: 1;
   transition: 1s;
 }
 
-/* line 41, C:/Users/Dodo/Desktop/WEBCV/scss/_gallery.scss */
+/* line 42, C:/Users/Dodo/Desktop/WEBCV/scss/_gallery.scss */
 .gallery .row .gl-image a .img-content .yellow-line {
   margin: 5px 0;
   width: 100px;
@@ -462,7 +406,7 @@
   background-color: #e0a80d;
 }
 
-/* line 48, C:/Users/Dodo/Desktop/WEBCV/scss/_gallery.scss */
+/* line 49, C:/Users/Dodo/Desktop/WEBCV/scss/_gallery.scss */
 .gallery .row .gl-image a .img-content h4,
 .gallery .row .gl-image a .img-content p {
   color: #fff;
@@ -471,13 +415,13 @@
   text-shadow: 0 2px 7px #000;
 }
 
-/* line 55, C:/Users/Dodo/Desktop/WEBCV/scss/_gallery.scss */
+/* line 56, C:/Users/Dodo/Desktop/WEBCV/scss/_gallery.scss */
 .gallery .row .gl-image a .img-content h4:first-child,
 .gallery .row .gl-image a .img-content p:first-child {
   margin-top: 2em;
 }
 
-/* line 59, C:/Users/Dodo/Desktop/WEBCV/scss/_gallery.scss */
+/* line 60, C:/Users/Dodo/Desktop/WEBCV/scss/_gallery.scss */
 .gallery .row .gl-image a .img-content h4:last-child,
 .gallery .row .gl-image a .img-content p:last-child {
   font-size: 1.5em;
@@ -530,18 +474,18 @@ a {
 }
 
 /* line 53, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
-a:hover, a:active, a:focus {
+a:hover, a:active {
   color: #e0a80d;
   transition: .5s;
 }
 
-/* line 61, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 60, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 .container {
-  margin: 50px auto;
+  margin: 100px auto;
   max-width: 1200px;
 }
 
-/* line 65, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 64, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 .container .container-header {
   width: 30%;
   float: left;
@@ -549,28 +493,29 @@ a:hover, a:active, a:focus {
   margin-right: 30px;
 }
 
-/* line 71, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 70, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 .container .container-header h2 {
   font-size: 1.2em;
   margin: 0;
 }
 
-/* line 75, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 74, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 .container .container-header h3 {
   font-size: .9em;
 }
 
-/* line 79, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 78, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 .container .container-header .shadow-title {
   position: absolute;
-  left: 12%;
-  top: 8%;
+  left: 5%;
+  top: 20%;
   text-align: left;
   font-size: 9em;
   line-height: 120px;
-  color: rgba(0, 0, 0, 0.08);
+  color: #e0a80d;
+  opacity: .05;
   margin: 0;
-  z-index: -1;
+  z-index: 1;
 }
 
 /* line 92, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
@@ -600,44 +545,6 @@ section:nth-of-type(odd) {
 /* line 114, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 section.o-section {
   position: relative;
-}
-
-/* line 117, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
-section.o-section .header-bg {
-  display: block;
-  width: 10%;
-  position: absolute;
-  height: 100%;
-  background-color: #e0a80d;
-  box-shadow: 0px 0px 10px #000;
-}
-
-/* line 125, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
-section.o-section:after {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 10%;
-  top: 70px;
-  z-index: 1;
-  border-top: 1em solid transparent;
-  border-bottom: 1em solid transparent;
-  border-right: 1em solid transparent;
-  border-left: 1em solid #e0a80d;
-  filter: drop-shadow 5px 5px 10px #000;
-}
-
-/* line 139, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
-section.o-section .fa-user,
-section.o-section .fa-cogs,
-section.o-section .fa-list-ul,
-section.o-section .fa-folder-open,
-section.o-section .fa-paper-plane {
-  display: block;
-  color: #2b2c2c;
-  font-size: 40px;
-  text-align: center;
-  margin-top: 70px;
 }
 
 /* line 152, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */

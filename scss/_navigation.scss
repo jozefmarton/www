@@ -3,67 +3,54 @@
 // ---------------------------------NAVIGATION-----------------------------------------
 
 .overlay {
-    /* Height & width depends on how you want to reveal the overlay (see JS below) */
     height: 100%;
     width: 0;
     position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Sit on top */
+    z-index: 2;
     left: 0;
     top: 0;
     background-color: $color-headings;
-    /* Black fallback color */
     background-color: transparentize($color-headings, 0.10);
-    /* Black w/opacity */
-    overflow-x: hidden;
-    /* Disable horizontal scroll */
+    overflow-x: hidden; /* Disable horizontal scroll */
     transition: 0.5s;
-    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-    /* Position the content inside the overlay */
+
     .overlay-content {
         position: relative;
         top: 25%;
-        /* 25% from the top */
-        width: 100%;
-        /* 100% width */
+        // width: 0%;
         text-align: center;
-        /* Centered text/links */
         margin-top: 30px;
-        /* 30px top margin to avoid conflict with the close button on smaller screens */
+        margin: 0 auto;
+    }
+
+    a {
+    padding: 8px;
+    font-size: 36px;
+    color: $color-bg;
+    display: block;
+    transition: 0.5s;
+
+    &:hover,
+    &:focus {
+        color: $icon-color;
+        border-left: 5px solid $icon-color;
+        border-right: 5px solid $icon-color;
     }
 }
 
-/* The navigation links inside the overlay */
-
-.overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: $color-bg-body;
-    display: block;
-    /* Display block instead of inline */
-    transition: 0.5s;
-    /* Transition effects on hover (color) */
-}
-
-/* When you mouse over the navigation links, change their color */
-
-.overlay a:hover,
-.overlay a:focus {
-    color: $icon-color;
-}
-
-/* Position the close button (top right corner) */
-
-.overlay .closebtn {
+    .closebtn {
     position: absolute;
     top: 20px;
     right: 45px;
     font-size: 60px;
+
+    &:hover {
+        border-left: none;
+        border-right: none;
+        }
+    }
 }
 
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 
 @media screen and (max-height: 450px) {
     .overlay a {
