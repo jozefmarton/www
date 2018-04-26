@@ -40,7 +40,7 @@
 .btn-nav {
   font-size: 1.5em;
   border-bottom: 1.5px solid $color-text;
-  position: absolute;
+  position: fixed;
   left: 0px;
   top: 0px;
   margin: 40px;
@@ -55,10 +55,11 @@
   bottom: -100px;
   right: 20px;
   padding: 0 15px;
-  text-shadow: 0 0 6px #000;
+  text-shadow: 0 2px 5px #000;
   transition: all .5s ease;
+  z-index: 999;
   .sticky-btn & {
-    bottom: 20px;
+    bottom: 55px;
   }
 
   &:hover {

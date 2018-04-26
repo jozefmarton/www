@@ -106,7 +106,7 @@
 .btn-nav {
   font-size: 1.5em;
   border-bottom: 1.5px solid #a0a1a2;
-  position: absolute;
+  position: fixed;
   left: 0px;
   top: 0px;
   margin: 40px;
@@ -122,16 +122,17 @@
   bottom: -100px;
   right: 20px;
   padding: 0 15px;
-  text-shadow: 0 0 6px #000;
+  text-shadow: 0 2px 5px #000;
   transition: all .5s ease;
+  z-index: 999;
 }
 
-/* line 60, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
+/* line 61, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
 .sticky-btn .btn-up {
-  bottom: 20px;
+  bottom: 55px;
 }
 
-/* line 64, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
+/* line 65, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
 .btn-up:hover {
   border: none;
   text-shadow: none;
@@ -210,40 +211,41 @@
   background-color: #a0a1a2;
   width: 90%;
   height: 6px;
+  overflow: hidden;
 }
 
-/* line 26, C:/Users/Dodo/Desktop/WEBCV/scss/_skills.scss */
+/* line 27, C:/Users/Dodo/Desktop/WEBCV/scss/_skills.scss */
 .skills .bar-content .progress-bar .progress {
   background-color: #e0a80d;
   height: 6px;
 }
 
-/* line 30, C:/Users/Dodo/Desktop/WEBCV/scss/_skills.scss */
+/* line 31, C:/Users/Dodo/Desktop/WEBCV/scss/_skills.scss */
 .skills .bar-content .progress-bar .html {
-  width: 90%;
-}
-
-/* line 33, C:/Users/Dodo/Desktop/WEBCV/scss/_skills.scss */
-.skills .bar-content .progress-bar .css {
   width: 80%;
 }
 
-/* line 36, C:/Users/Dodo/Desktop/WEBCV/scss/_skills.scss */
-.skills .bar-content .progress-bar .sass {
-  width: 60%;
-}
-
-/* line 39, C:/Users/Dodo/Desktop/WEBCV/scss/_skills.scss */
-.skills .bar-content .progress-bar .javascript {
-  width: 50%;
-}
-
-/* line 42, C:/Users/Dodo/Desktop/WEBCV/scss/_skills.scss */
-.skills .bar-content .progress-bar .bootstrap {
+/* line 34, C:/Users/Dodo/Desktop/WEBCV/scss/_skills.scss */
+.skills .bar-content .progress-bar .css {
   width: 70%;
 }
 
-/* line 45, C:/Users/Dodo/Desktop/WEBCV/scss/_skills.scss */
+/* line 37, C:/Users/Dodo/Desktop/WEBCV/scss/_skills.scss */
+.skills .bar-content .progress-bar .sass {
+  width: 40%;
+}
+
+/* line 40, C:/Users/Dodo/Desktop/WEBCV/scss/_skills.scss */
+.skills .bar-content .progress-bar .javascript {
+  width: 40%;
+}
+
+/* line 43, C:/Users/Dodo/Desktop/WEBCV/scss/_skills.scss */
+.skills .bar-content .progress-bar .bootstrap {
+  width: 50%;
+}
+
+/* line 46, C:/Users/Dodo/Desktop/WEBCV/scss/_skills.scss */
 .skills .bar-content .progress-bar .photoshop {
   width: 80%;
 }
@@ -349,6 +351,11 @@
   font-size: 1em;
 }
 
+/* line 89, C:/Users/Dodo/Desktop/WEBCV/scss/_contact.scss */
+#contact .contact-content .map {
+  margin-top: 100px;
+}
+
 /* line 3, C:/Users/Dodo/Desktop/WEBCV/scss/_gallery.scss */
 .gallery .row .gl-image {
   position: relative;
@@ -425,6 +432,26 @@
 .gallery .row .gl-image a .img-content h4:last-child,
 .gallery .row .gl-image a .img-content p:last-child {
   font-size: 1.5em;
+}
+
+/* line 72, C:/Users/Dodo/Desktop/WEBCV/scss/_gallery.scss */
+#gl-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  text-align: center;
+}
+
+/* line 82, C:/Users/Dodo/Desktop/WEBCV/scss/_gallery.scss */
+#gl-overlay img {
+  margin-top: 3%;
+  border: 5px solid #fff;
+  height: 85%;
+  width: auto;
 }
 
 /* line 13, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
@@ -628,8 +655,8 @@ section #home .my-name {
 
 /* line 225, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 .icons .fa {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
 }
 
 /* line 230, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
@@ -640,7 +667,7 @@ section #home .my-name {
 
 /* line 235, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 .icons a {
-  font-size: 2em;
+  font-size: 1.5em;
   color: #a0a1a2;
   background-color: #3f4040;
   padding: 15px 20px;
@@ -652,6 +679,15 @@ section #home .my-name {
   color: #2d2e2e;
   background-color: #e0a80d;
   transition: 0.5s;
+}
+
+/* line 250, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #e0a80d;
+  color: #2b2c2c;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=../css/style.map */

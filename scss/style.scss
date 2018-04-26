@@ -223,8 +223,8 @@ section {
     margin: 40px 0;
 
     .fa {
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
     }
 
     li {
@@ -233,7 +233,7 @@ section {
     }
 
     a {
-        font-size: 2em;
+        font-size: 1.5em;
         color: $color-text;
         background-color: $icon-color;
         padding: 15px 20px;
@@ -245,4 +245,12 @@ section {
         background-color: $color-headings;
         transition: 0.5s;
     }
+}
+
+footer {
+	text-align: center;
+	padding: 1em;
+	background-color: $color-headings;
+	color: $color-bg;
+	font-weight: 500;
 }

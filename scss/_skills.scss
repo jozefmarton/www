@@ -22,25 +22,26 @@
 			background-color: $color-text;
 			 width: 90%;
 			height: 6px;
+			overflow: hidden;
 
 			.progress {
 				background-color: $color-headings;
 				height: 6px;
 			}
 			.html {
-				width: 90%;
-			}
-			.css {
 				width: 80%;
 			}
+			.css {
+				width: 70%;
+			}
 			.sass {
-				width: 60%;
+				width: 40%;
 			}
 			.javascript {
-				width: 50%;
+				width: 40%;
 			}
 			.bootstrap {
-				width: 70%;
+				width: 50%;
 			}
 			.photoshop {
 				width: 80%;

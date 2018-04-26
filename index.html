@@ -15,7 +15,7 @@
 				<!-- Button to close the overlay navigation -->
 				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 				<!-- Overlay content -->
-				<div class="overlay-content">
+				<div class="overlay-content menu">
 					<a href="#home">Me</a>
 					<a href="#about">About</a>
 					<a href="#skills">Skills</a>
@@ -28,20 +28,21 @@
 		<main class="clearfix">
 			<section>
 				<div id="home">
-					<span class="btn btn-nav" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i> Menu</span>
-					<img data-aos="fade-down" data-aos-duration="600"  data-aos-delay="400" src="img/cv-photo-500x500.jpg" alt="My face photo" width="210px" height="210px">
-					<h2 data-aos="fade-down" data-aos-duration="800"  data-aos-delay="400" class="my-name">jozef</h2>
-					<h1 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="400" >Marton</h1>
-					<p data-aos="fade-down" data-aos-duration="1200" data-aos-delay="400" >Front-End Developer</p>
+					<span class="btn btn-nav" data-aos="fade-down" data-aos-duration="600" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i> Menu</span>
+					<img data-aos="fade-down" data-aos-duration="600"  src="img/cv-photo-500x500.jpg" alt="My face photo" width="210px" height="210px">
+					<h2 data-aos="fade-down" data-aos-duration="800"  class="my-name">jozef</h2>
+					<h1 data-aos="fade-down" data-aos-duration="1000" >Marton</h1>
+					<p data-aos="fade-down" data-aos-duration="1200" >Front-End Developer</p>
 					<div class="social">
 						<ul class="icons">
-							<li data-aos="fade-down" data-aos-duration="1200" data-aos-delay="400"><a href="#"><i class="fa fa-facebook"></i></i></a></li>
-							<li data-aos="fade-down" data-aos-duration="1200" data-aos-delay="400"><a href="#"><i class="fa fa-instagram"></i></a></li>
-							<li data-aos="fade-down" data-aos-duration="1200" data-aos-delay="400"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+							<li data-aos="fade-down" data-aos-duration="1200"><a href="#"><i class="fa fa-facebook"></i></i></a></li>
+							<li data-aos="fade-down" data-aos-duration="1200"><a href="#"><i class="fa fa-instagram"></i></a></li>
+							<li data-aos="fade-down" data-aos-duration="1200"><a href="#"><i class="fa fa-linkedin"></i></a></li>
 						</ul>
 					</div>
 				</div>
 			</section>
+
 			<section id="about">
 				<div class="container clearfix" >
 					<div class="container-header">
@@ -50,8 +51,7 @@
 						<h3>Something short about me.</h3>
 					</div>
 					<div class="container-content">
-						<p>
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+						<p data-aos="fade-left" data-aos-duration="1000">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 						</p>
 					</div>
 				</div>
@@ -69,42 +69,44 @@
 						<div class="skills">
 							<article class="bar-content">
 								<div class="bar-header">
-									<h4>90%</h4>
+									<h4>80%</h4>
 									<h4>html5</h4>
 								</div>
-								<div class="progress-bar"><div class="progress html"></div></div>
-							</article>
-
-							<article class="bar-content">
-								<div class="bar-header">
-									<h4>80%</h4>
-									<h4>css3</h4>
+								<div class="progress-bar" data-percent="90%">
+									<div class="progress html" data-aos="slide-right" data-aos-duration="1500" data-aos-easing="ease-out"></div>
 								</div>
-								<div class="progress-bar"><div class="progress css"></div></div>
-							</article>
-
-							<article class="bar-content">
-								<div class="bar-header">
-									<h4>60%</h4>
-									<h4>sass</h4>
-								</div>
-								<div class="progress-bar"><div class="progress sass"></div></div>
-							</article>
-
-							<article class="bar-content">
-								<div class="bar-header">
-									<h4>50%</h4>
-									<h4>javascript / jquery</h4>
-								</div>
-								<div class="progress-bar"><div class="progress javascript"></div></div>
 							</article>
 
 							<article class="bar-content">
 								<div class="bar-header">
 									<h4>70%</h4>
+									<h4>css3</h4>
+								</div>
+								<div class="progress-bar " ><div class="progress css" data-aos="slide-right" data-aos-duration="1500" data-aos-easing="ease-out"></div></div>
+							</article>
+
+							<article class="bar-content">
+								<div class="bar-header">
+									<h4>40%</h4>
+									<h4>sass</h4>
+								</div>
+								<div class="progress-bar"><div class="progress sass" data-aos="slide-right" data-aos-duration="1500" data-aos-easing="ease-out"></div></div>
+							</article>
+
+							<article class="bar-content">
+								<div class="bar-header">
+									<h4>40%</h4>
+									<h4>javascript / jquery</h4>
+								</div>
+								<div class="progress-bar"><div class="progress javascript" data-aos="slide-right" data-aos-duration="1500" data-aos-easing="ease-out"></div></div>
+							</article>
+
+							<article class="bar-content">
+								<div class="bar-header">
+									<h4>50%</h4>
 									<h4>bootstrap</h4>
 								</div>
-								<div class="progress-bar"><div class="progress bootstrap"></div></div>
+								<div class="progress-bar"><div class="progress bootstrap" data-aos="slide-right" data-aos-duration="1500" data-aos-easing="ease-out"></div></div>
 							</article>
 
 							<article class="bar-content">
@@ -112,7 +114,7 @@
 									<h4>80%</h4>
 									<h4>photoshop</h4>
 								</div>
-								<div class="progress-bar"><div class="progress photoshop"></div></div>
+								<div class="progress-bar"><div class="progress photoshop" data-aos="fade-right" data-aos-duration="1500" data-aos-easing="ease-out"></div></div>
 							</article>
 						</div>
 					</div>
@@ -127,11 +129,11 @@
 						<h2>Timeline</h2>
 						<h3>My experiences.</h3>
 					</div>
-					<div class="timeline container-content" data-aos="fade-down" data-aos-duration="800" data-aos-delay="400">
+					<div class="timeline container-content" data-aos="fade-down" data-aos-duration="800">
 						<div class="row">
 							<div class="timeline-container">
 								<i class="fa fa-circle" aria-hidden="true"></i>
-								<article data-aos="fade-left" data-aos-duration="600" data-aos-delay="400">
+								<article data-aos="fade-left" data-aos-duration="600">
 									<h3>2018</h3>
 									<h3>Accenture internship</h3>
 									<p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto.</p>
@@ -142,7 +144,7 @@
 						<div class="row">
 							<div class="timeline-container">
 								<i class="fa fa-circle" aria-hidden="true"></i>
-								<article data-aos="fade-left" data-aos-duration="600" data-aos-delay="400">
+								<article data-aos="fade-left" data-aos-duration="600">
 									<h3>2018</h3>
 									<h3>IT v kurze</h3>
 									<p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Lorem ipsum dolor sit amet, quo ei simul congue exerci.</p>
@@ -153,7 +155,7 @@
 						<div class="row">
 							<div class="timeline-container">
 								<i class="fa fa-circle" aria-hidden="true"></i>
-								<article data-aos="fade-left" data-aos-duration="600" data-aos-delay="400">
+								<article data-aos="fade-left" data-aos-duration="600">
 									<h3>2017</h3>
 									<h3>Travelling</h3>
 									<p>Lorem ipsum dolor sit amet, quo ei simul congue exerci. Lorem ipsum dolor sit amet, quo ei simul congue exerci, lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto.</p>
@@ -164,7 +166,7 @@
 						<div class="row">
 							<div class="timeline-container">
 								<i class="fa fa-circle" aria-hidden="true"></i>
-								<article data-aos="fade-left" data-aos-duration="600" data-aos-delay="400">
+								<article data-aos="fade-left" data-aos-duration="600">
 									<h3>2016</h3>
 									<h3>VW</h3>
 									<p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Lorem ipsum dolor sit amet, quo ei simul.</p>
@@ -187,7 +189,7 @@
 					<div class="container-content">
 						<div class="gallery">
 							<div class="row">
-								<div class="gl-image">
+								<div class="gl-image" data-aos="fade-left" data-aos-duration="600">
 									<a href="img/ack-1280x850.jpg">
 										<img src="img/ack-1280x850.jpg" alt="nantucket" width="380px" height="240">
 										<div class="img-content">
@@ -198,7 +200,7 @@
 									</a>
 								</div>
 
-								<div class="gl-image">
+								<div class="gl-image" data-aos="fade-left" data-aos-duration="600">
 									<a href="img/athens1280x853.jpg" target="_blank">
 										<img src="img/athens1280x853.jpg" alt="athens" width="380px" height="240">
 										<div class="img-content">
@@ -209,7 +211,7 @@
 									</a>
 								</div>
 
-								<div class="gl-image">
+								<div class="gl-image" data-aos="fade-left" data-aos-duration="600">
 									<a href="img/berlin-1280x920.jpg">
 										<img src="img/berlin-1280x920.jpg" alt="berlin" width="380px" height="240">
 										<div class="img-content">
@@ -220,7 +222,7 @@
 									</a>
 								</div>
 
-								<div class="gl-image">
+								<div class="gl-image" data-aos="fade-left" data-aos-duration="600">
 									<a href="img/dubai-1280.jpg">
 										<img src="img/dubai-1280.jpg" alt="dubai" width="380px" height="240">
 										<div class="img-content">
@@ -231,7 +233,7 @@
 									</a>
 								</div>
 
-								<div class="gl-image">
+								<div class="gl-image" data-aos="fade-left" data-aos-duration="600">
 									<a href="img/new-york-1280x853.jpg">
 										<img src="img/new-york-1280x853.jpg" alt="new york" width="380px" height="240">
 										<div class="img-content">
@@ -242,7 +244,7 @@
 									</a>
 								</div>
 
-								<div class="gl-image">
+								<div class="gl-image" data-aos="fade-left" data-aos-duration="600">
 									<a href="img/yucatan-1280.jpg">
 										<img src="img/yucatan-1280.jpg" alt="yucatan" width="380px" height="240">
 										<div class="img-content">
@@ -268,12 +270,12 @@
 							<h2>Contact</h2>
 							<h3>Contact me.</h3>
 						</div>
-						<div class="container-content">
+						<div class="container-content" data-aos="fade-left" data-aos-duration="600">
 							<form action="#" method="get" class="contact-form">
 								<input type="text" name="name" placeholder="Your name" required="required">
 								<input type="email" name="email" placeholder="@" required="required">
 								<textarea name="message" rows="6" placeholder="Your message"></textarea>
-								<button class="btn send-btn">Send</button>
+								<button type="submit" class="send-btn">Send</button>
 							</form>
 
 							<hr>
@@ -291,23 +293,21 @@
 									<h4>Email</h4>
 									<a href="mailto:jozef.marton@itvkurze.sk" target="_blank">jozef.marton@itvkurze.sk</a>
 								</div>
+								<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d66717.31370693477!2d18.92044790655879!3d48.459128368147304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ssk!2ssk!4v1524749911980" width="100%" height="300px" frameborder="0" style="border:0" allowfullscreen></iframe>
 							</div>
 						</div>
 					</div>
 			</section>
-
-			<!-- <section id="contact">
-				<div class="container">
-					<h2>Contact</h2>
-				</div>
-			</section> -->
-
 		</main>
 
 		<footer>
-			<a href="#" class="btn btn-up"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a>
+			2018 &copy; Jozef Marton
+			<a href="#" class="btn btn-up">
+				<i class="fa fa-angle-double-up" aria-hidden="true"></i>
+			</a>
 		</footer>
 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 		<script src="js/app.js"></script>
 
