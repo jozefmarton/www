@@ -75,47 +75,57 @@
   z-index: 1;
 }
 
-/* line 14, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
-.btn:hover {
-  color: #2b2c2c;
-  border-bottom: 1.5px solid #e0a80d;
+@media only screen and (min-width: 1024px) {
+  /* line 15, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
+  .btn:hover {
+    color: #2b2c2c;
+    border-bottom: 1.5px solid #e0a80d;
+  }
+  /* line 18, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
+  .btn:hover:after {
+    left: 0;
+    opacity: 1;
+  }
+  /* line 23, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
+  .btn:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    top: 0;
+    left: -100%;
+    background-color: #e0a80d;
+    opacity: 0;
+    transition: all .4s ease;
+    z-index: -1;
+  }
 }
 
-/* line 17, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
-.btn:hover:after {
-  left: 0;
-  opacity: 1;
-}
-
-/* line 22, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
-.btn:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: block;
-  top: 0;
-  left: -100%;
-  background-color: #e0a80d;
-  opacity: 0;
-  transition: all .4s ease;
-  z-index: -1;
-}
-
-/* line 40, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
+/* line 42, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
 .btn-nav {
   font-size: 1.5em;
-  border-bottom: 1.5px solid #a0a1a2;
+  color: #2b2c2c;
   position: fixed;
   left: 0px;
   top: 0px;
-  margin: 40px;
   padding: 10px 9px;
   text-transform: uppercase;
   font-weight: 700;
+  background-color: #e0a80d;
 }
 
-/* line 52, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
+@media only screen and (min-width: 1024px) {
+  /* line 42, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
+  .btn-nav {
+    border-bottom: 1.5px solid #a0a1a2;
+    color: #a0a1a2;
+    background-color: transparent;
+    margin: 30px;
+  }
+}
+
+/* line 63, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
 .btn-up {
   font-size: 50px;
   position: fixed;
@@ -127,12 +137,12 @@
   z-index: 999;
 }
 
-/* line 61, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
+/* line 72, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
 .sticky-btn .btn-up {
   bottom: 55px;
 }
 
-/* line 65, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
+/* line 76, C:/Users/Dodo/Desktop/WEBCV/scss/_buttons.scss */
 .btn-up:hover {
   border: none;
   text-shadow: none;
@@ -617,7 +627,31 @@ a:hover, a:active {
   z-index: 1;
 }
 
-/* line 95, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+@media only screen and (min-width: 1024px) {
+  /* line 83, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+  .container .container-header .shadow-title {
+    font-size: 6em;
+    left: 130px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  /* line 83, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+  .container .container-header .shadow-title {
+    font-size: 7em;
+    left: 130px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  /* line 83, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+  .container .container-header .shadow-title {
+    font-size: 8em;
+    left: 0;
+  }
+}
+
+/* line 110, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 .container .container-header .shadow-title.io-icon:before {
   position: absolute;
   content: "\f007";
@@ -626,7 +660,7 @@ a:hover, a:active {
   left: -115px;
 }
 
-/* line 103, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 118, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 .container .container-header .shadow-title.sl-icon:before {
   position: absolute;
   content: "\f085";
@@ -635,7 +669,7 @@ a:hover, a:active {
   left: -140px;
 }
 
-/* line 111, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 126, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 .container .container-header .shadow-title.tl-icon:before {
   position: absolute;
   content: "\f017";
@@ -644,7 +678,7 @@ a:hover, a:active {
   left: -140px;
 }
 
-/* line 119, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 134, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 .container .container-header .shadow-title.pf-icon:before {
   position: absolute;
   content: "\f07c";
@@ -653,48 +687,54 @@ a:hover, a:active {
   left: -140px;
 }
 
-/* line 138, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 153, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 .container .container-content {
   width: 100%;
 }
 
 @media only screen and (min-width: 1024px) {
-  /* line 138, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+  /* line 153, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
   .container .container-content {
     float: left;
     width: 65%;
   }
 }
 
-/* line 149, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 164, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 .container p {
   font-size: 1em;
   margin: 0;
 }
 
-/* line 156, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 171, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 section {
   overflow: hidden;
   display: block;
 }
 
-/* line 160, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 175, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 section:nth-of-type(odd) {
   background-color: #2b2c2c;
 }
 
-/* line 165, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 180, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 section #home {
+  text-align: center;
   min-height: 100vh;
   padding: 100px 25px;
-  background-image: url(../img/black-abstract-bg.jpg);
-  text-align: center;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
 }
 
-/* line 174, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+@media only screen and (min-width: 1024px) {
+  /* line 180, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+  section #home {
+    background-image: url(../img/black-abstract-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+}
+
+/* line 192, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 section #home h1 {
   font-size: 3.75em;
   color: #e0a80d;
@@ -703,31 +743,31 @@ section #home h1 {
 }
 
 @media only screen and (min-width: 1024px) {
-  /* line 174, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+  /* line 192, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
   section #home h1 {
     font-size: 5em;
   }
 }
 
-/* line 185, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 203, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 section #home p {
   font-size: 1em;
 }
 
 @media only screen and (min-width: 1024px) {
-  /* line 185, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+  /* line 203, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
   section #home p {
     font-size: 1.5em;
   }
 }
 
-/* line 192, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 210, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 section #home img {
   border-radius: 50%;
   margin-bottom: 30px;
 }
 
-/* line 196, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 214, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 section #home .my-name {
   text-transform: none;
   font-weight: 300;
@@ -738,32 +778,32 @@ section #home .my-name {
 }
 
 @media only screen and (min-width: 1024px) {
-  /* line 196, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+  /* line 214, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
   section #home .my-name {
     font-size: 4.375em;
   }
 }
 
-/* line 212, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 230, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 .icons {
   text-align: center;
   padding: 0;
   margin: 40px 0;
 }
 
-/* line 217, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 235, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 .icons .fa {
   width: 20px;
   height: 20px;
 }
 
-/* line 222, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 240, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 .icons li {
   text-decoration: none;
   display: inline-block;
 }
 
-/* line 227, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 245, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 .icons a {
   font-size: 1.5em;
   color: #a0a1a2;
@@ -772,14 +812,14 @@ section #home .my-name {
   margin: 15px;
 }
 
-/* line 235, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 253, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 .icons a:hover {
   color: #2d2e2e;
   background-color: #e0a80d;
   transition: 0.5s;
 }
 
-/* line 242, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 260, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 footer {
   text-align: center;
   padding: 1em;
