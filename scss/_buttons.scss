@@ -13,7 +13,7 @@
 
     &:hover {
       color: $color-bg;
-      border-bottom: 1.5px solid $color-headings;
+      border-bottom: 1.5px solid $color-orange;
       &:after {
         left: 0;
         opacity: 1;
@@ -28,7 +28,7 @@
         display: block;
         top: 0;
         left: -100%;
-        background-color: $color-headings;
+        background-color: $color-orange;
         opacity: 0;
         transition: all .4s ease;
         z-index: -1;

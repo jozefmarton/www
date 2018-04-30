@@ -2,9 +2,14 @@
 
 .skills {
 	.bar-content {
-		width: 50%;
-		float: left;
+		width: 100%;
 		margin: 0 0 3.4em 0;
+
+		@media #{$sm} {
+            width: 50%;
+            float: left;
+        }
+
 		.bar-header {
 			h4 {
 				margin: 0;
@@ -13,19 +18,23 @@
 				margin-bottom: .5em;
 
 				&:first-of-type {
-					color: $color-headings;
+					color: $color-orange;
 					font-size: 1.2em;
 				}
 			}
 		}
 		.progress-bar {
 			background-color: $color-text;
-			 width: 90%;
+			 width: 100%;
 			height: 6px;
 			overflow: hidden;
 
+			@media #{$sm} {
+	            width: 95%;
+	        }
+
 			.progress {
-				background-color: $color-headings;
+				background-color: $color-orange;
 				height: 6px;
 			}
 			.html {

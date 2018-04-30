@@ -187,12 +187,19 @@
 
 /* line 4, C:/Users/Dodo/Desktop/WEBCV/scss/_skills.scss */
 .skills .bar-content {
-  width: 50%;
-  float: left;
+  width: 100%;
   margin: 0 0 3.4em 0;
 }
 
-/* line 9, C:/Users/Dodo/Desktop/WEBCV/scss/_skills.scss */
+@media only screen and (min-width: 1024px) {
+  /* line 4, C:/Users/Dodo/Desktop/WEBCV/scss/_skills.scss */
+  .skills .bar-content {
+    width: 50%;
+    float: left;
+  }
+}
+
+/* line 14, C:/Users/Dodo/Desktop/WEBCV/scss/_skills.scss */
 .skills .bar-content .bar-header h4 {
   margin: 0;
   display: inline-block;
@@ -200,52 +207,59 @@
   margin-bottom: .5em;
 }
 
-/* line 15, C:/Users/Dodo/Desktop/WEBCV/scss/_skills.scss */
+/* line 20, C:/Users/Dodo/Desktop/WEBCV/scss/_skills.scss */
 .skills .bar-content .bar-header h4:first-of-type {
   color: #e0a80d;
   font-size: 1.2em;
 }
 
-/* line 21, C:/Users/Dodo/Desktop/WEBCV/scss/_skills.scss */
+/* line 26, C:/Users/Dodo/Desktop/WEBCV/scss/_skills.scss */
 .skills .bar-content .progress-bar {
   background-color: #a0a1a2;
-  width: 90%;
+  width: 100%;
   height: 6px;
   overflow: hidden;
 }
 
-/* line 27, C:/Users/Dodo/Desktop/WEBCV/scss/_skills.scss */
+@media only screen and (min-width: 1024px) {
+  /* line 26, C:/Users/Dodo/Desktop/WEBCV/scss/_skills.scss */
+  .skills .bar-content .progress-bar {
+    width: 95%;
+  }
+}
+
+/* line 36, C:/Users/Dodo/Desktop/WEBCV/scss/_skills.scss */
 .skills .bar-content .progress-bar .progress {
   background-color: #e0a80d;
   height: 6px;
 }
 
-/* line 31, C:/Users/Dodo/Desktop/WEBCV/scss/_skills.scss */
+/* line 40, C:/Users/Dodo/Desktop/WEBCV/scss/_skills.scss */
 .skills .bar-content .progress-bar .html {
   width: 80%;
 }
 
-/* line 34, C:/Users/Dodo/Desktop/WEBCV/scss/_skills.scss */
+/* line 43, C:/Users/Dodo/Desktop/WEBCV/scss/_skills.scss */
 .skills .bar-content .progress-bar .css {
   width: 70%;
 }
 
-/* line 37, C:/Users/Dodo/Desktop/WEBCV/scss/_skills.scss */
+/* line 46, C:/Users/Dodo/Desktop/WEBCV/scss/_skills.scss */
 .skills .bar-content .progress-bar .sass {
   width: 40%;
 }
 
-/* line 40, C:/Users/Dodo/Desktop/WEBCV/scss/_skills.scss */
+/* line 49, C:/Users/Dodo/Desktop/WEBCV/scss/_skills.scss */
 .skills .bar-content .progress-bar .javascript {
   width: 40%;
 }
 
-/* line 43, C:/Users/Dodo/Desktop/WEBCV/scss/_skills.scss */
+/* line 52, C:/Users/Dodo/Desktop/WEBCV/scss/_skills.scss */
 .skills .bar-content .progress-bar .bootstrap {
   width: 50%;
 }
 
-/* line 46, C:/Users/Dodo/Desktop/WEBCV/scss/_skills.scss */
+/* line 55, C:/Users/Dodo/Desktop/WEBCV/scss/_skills.scss */
 .skills .bar-content .progress-bar .photoshop {
   width: 80%;
 }
@@ -275,11 +289,19 @@
   background-color: #000;
   padding: 1em;
   margin-bottom: 2em;
-  width: 48%;
+  width: 100%;
   opacity: .6;
 }
 
-/* line 27, C:/Users/Dodo/Desktop/WEBCV/scss/_contact.scss */
+@media only screen and (min-width: 1024px) {
+  /* line 15, C:/Users/Dodo/Desktop/WEBCV/scss/_contact.scss */
+  #contact .contact-form input,
+  #contact .contact-form textarea {
+    width: 47%;
+  }
+}
+
+/* line 31, C:/Users/Dodo/Desktop/WEBCV/scss/_contact.scss */
 #contact .contact-form input::placeholder,
 #contact .contact-form textarea::placeholder {
   font-size: 1.2em;
@@ -287,7 +309,7 @@
   font-family: "Montserrat", sans-serif;
 }
 
-/* line 33, C:/Users/Dodo/Desktop/WEBCV/scss/_contact.scss */
+/* line 37, C:/Users/Dodo/Desktop/WEBCV/scss/_contact.scss */
 #contact .contact-form input:focus, #contact .contact-form input:hover,
 #contact .contact-form textarea:focus,
 #contact .contact-form textarea:hover {
@@ -296,22 +318,29 @@
   transition: .5s;
 }
 
-/* line 41, C:/Users/Dodo/Desktop/WEBCV/scss/_contact.scss */
+/* line 45, C:/Users/Dodo/Desktop/WEBCV/scss/_contact.scss */
 #contact .contact-form input {
   margin-right: 2em;
 }
 
-/* line 43, C:/Users/Dodo/Desktop/WEBCV/scss/_contact.scss */
+@media only screen and (min-width: 1024px) {
+  /* line 45, C:/Users/Dodo/Desktop/WEBCV/scss/_contact.scss */
+  #contact .contact-form input {
+    margin-right: 2.5em;
+  }
+}
+
+/* line 51, C:/Users/Dodo/Desktop/WEBCV/scss/_contact.scss */
 #contact .contact-form input:last-of-type {
   margin-right: 0;
 }
 
-/* line 48, C:/Users/Dodo/Desktop/WEBCV/scss/_contact.scss */
+/* line 56, C:/Users/Dodo/Desktop/WEBCV/scss/_contact.scss */
 #contact .contact-form textarea {
   width: 100%;
 }
 
-/* line 52, C:/Users/Dodo/Desktop/WEBCV/scss/_contact.scss */
+/* line 60, C:/Users/Dodo/Desktop/WEBCV/scss/_contact.scss */
 #contact .contact-form .send-btn {
   color: #2d2e2e;
   font-family: "Montserrat", sans-serif;
@@ -325,20 +354,27 @@
   cursor: pointer;
 }
 
-/* line 64, C:/Users/Dodo/Desktop/WEBCV/scss/_contact.scss */
+/* line 72, C:/Users/Dodo/Desktop/WEBCV/scss/_contact.scss */
 #contact .contact-form .send-btn:hover {
   box-shadow: 0 0 5px #e0a80d;
   transition: .5s;
 }
 
-/* line 73, C:/Users/Dodo/Desktop/WEBCV/scss/_contact.scss */
+/* line 81, C:/Users/Dodo/Desktop/WEBCV/scss/_contact.scss */
 #contact .contact-content .contact-info {
-  display: inline-block;
   text-align: center;
-  width: 32%;
+  margin: 2em 0;
 }
 
-/* line 77, C:/Users/Dodo/Desktop/WEBCV/scss/_contact.scss */
+@media only screen and (min-width: 1024px) {
+  /* line 81, C:/Users/Dodo/Desktop/WEBCV/scss/_contact.scss */
+  #contact .contact-content .contact-info {
+    display: inline-block;
+    width: 32%;
+  }
+}
+
+/* line 89, C:/Users/Dodo/Desktop/WEBCV/scss/_contact.scss */
 #contact .contact-content .contact-info h4 {
   font-size: 1.2em;
   text-transform: none;
@@ -346,51 +382,65 @@
   margin: 0 0 .5em 0;
 }
 
-/* line 84, C:/Users/Dodo/Desktop/WEBCV/scss/_contact.scss */
+/* line 96, C:/Users/Dodo/Desktop/WEBCV/scss/_contact.scss */
 #contact .contact-content .contact-info p {
   font-size: 1em;
 }
 
-/* line 89, C:/Users/Dodo/Desktop/WEBCV/scss/_contact.scss */
+/* line 101, C:/Users/Dodo/Desktop/WEBCV/scss/_contact.scss */
 #contact .contact-content .map {
   margin-top: 100px;
 }
 
-/* line 3, C:/Users/Dodo/Desktop/WEBCV/scss/_gallery.scss */
+/* line 3, C:/Users/Dodo/Desktop/WEBCV/scss/_portfolio.scss */
 .gallery .row .gl-image {
-  position: relative;
-  float: left;
-  margin: 0 20px 20px 0;
+  text-align: center;
+  margin: 0 0px 20px 0;
   z-index: 2;
 }
 
-/* line 9, C:/Users/Dodo/Desktop/WEBCV/scss/_gallery.scss */
+@media only screen and (min-width: 1024px) {
+  /* line 3, C:/Users/Dodo/Desktop/WEBCV/scss/_portfolio.scss */
+  .gallery .row .gl-image {
+    float: left;
+    width: 50%;
+  }
+}
+
+/* line 14, C:/Users/Dodo/Desktop/WEBCV/scss/_portfolio.scss */
 .gallery .row .gl-image img {
   box-shadow: 0px 4px 8px #000;
 }
 
-/* line 13, C:/Users/Dodo/Desktop/WEBCV/scss/_gallery.scss */
-.gallery .row .gl-image:nth-of-type(even) {
-  margin-right: 0;
+@media only screen and (min-width: 1024px) {
+  /* line 14, C:/Users/Dodo/Desktop/WEBCV/scss/_portfolio.scss */
+  .gallery .row .gl-image img {
+    width: 95%;
+  }
 }
 
-/* line 17, C:/Users/Dodo/Desktop/WEBCV/scss/_gallery.scss */
+/* line 22, C:/Users/Dodo/Desktop/WEBCV/scss/_portfolio.scss */
 .gallery .row .gl-image a {
   display: block;
-  filter: grayscale(100%);
 }
 
-/* line 21, C:/Users/Dodo/Desktop/WEBCV/scss/_gallery.scss */
-.gallery .row .gl-image a:hover {
-  transform: scale(1.03);
-  filter: grayscale(0%);
-  transition: .8s;
+@media only screen and (min-width: 1024px) {
+  /* line 22, C:/Users/Dodo/Desktop/WEBCV/scss/_portfolio.scss */
+  .gallery .row .gl-image a {
+    filter: grayscale(100%);
+  }
+  /* line 28, C:/Users/Dodo/Desktop/WEBCV/scss/_portfolio.scss */
+  .gallery .row .gl-image a:hover {
+    transform: scale(1.03);
+    filter: grayscale(0%);
+    transition: .8s;
+  }
 }
 
-/* line 27, C:/Users/Dodo/Desktop/WEBCV/scss/_gallery.scss */
+/* line 35, C:/Users/Dodo/Desktop/WEBCV/scss/_portfolio.scss */
 .gallery .row .gl-image a .img-content {
   display: block;
-  position: absolute;
+  position: fixed;
   padding-left: 2em;
   top: 0;
   text-align: left;
@@ -399,13 +449,19 @@
   height: 100%;
 }
 
-/* line 37, C:/Users/Dodo/Desktop/WEBCV/scss/_gallery.scss */
-.gallery .row .gl-image a .img-content:hover {
-  opacity: 1;
-  transition: 1s;
+@media only screen and (min-width: 1024px) {
+  /* line 35, C:/Users/Dodo/Desktop/WEBCV/scss/_portfolio.scss */
+  .gallery .row .gl-image a .img-content {
+    opacity: 0;
+  }
+  /* line 49, C:/Users/Dodo/Desktop/WEBCV/scss/_portfolio.scss */
+  .gallery .row .gl-image a .img-content:hover {
+    opacity: 1;
+    transition: 1s;
+  }
 }
 
-/* line 42, C:/Users/Dodo/Desktop/WEBCV/scss/_gallery.scss */
+/* line 55, C:/Users/Dodo/Desktop/WEBCV/scss/_portfolio.scss */
 .gallery .row .gl-image a .img-content .yellow-line {
   margin: 5px 0;
   width: 100px;
@@ -413,7 +469,7 @@
   background-color: #e0a80d;
 }
 
-/* line 49, C:/Users/Dodo/Desktop/WEBCV/scss/_gallery.scss */
+/* line 62, C:/Users/Dodo/Desktop/WEBCV/scss/_portfolio.scss */
 .gallery .row .gl-image a .img-content h4,
 .gallery .row .gl-image a .img-content p {
   color: #fff;
@@ -422,19 +478,19 @@
   text-shadow: 0 2px 7px #000;
 }
 
-/* line 56, C:/Users/Dodo/Desktop/WEBCV/scss/_gallery.scss */
+/* line 69, C:/Users/Dodo/Desktop/WEBCV/scss/_portfolio.scss */
 .gallery .row .gl-image a .img-content h4:first-child,
 .gallery .row .gl-image a .img-content p:first-child {
   margin-top: 2em;
 }
 
-/* line 60, C:/Users/Dodo/Desktop/WEBCV/scss/_gallery.scss */
+/* line 73, C:/Users/Dodo/Desktop/WEBCV/scss/_portfolio.scss */
 .gallery .row .gl-image a .img-content h4:last-child,
 .gallery .row .gl-image a .img-content p:last-child {
   font-size: 1.5em;
 }
 
-/* line 72, C:/Users/Dodo/Desktop/WEBCV/scss/_gallery.scss */
+/* line 85, C:/Users/Dodo/Desktop/WEBCV/scss/_portfolio.scss */
 #gl-overlay {
   background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
@@ -446,27 +502,35 @@
   text-align: center;
 }
 
-/* line 82, C:/Users/Dodo/Desktop/WEBCV/scss/_gallery.scss */
+/* line 95, C:/Users/Dodo/Desktop/WEBCV/scss/_portfolio.scss */
 #gl-overlay img {
   margin-top: 3%;
   border: 5px solid #fff;
-  height: 85%;
-  width: auto;
+  height: auto;
+  max-width: 90%;
 }
 
-/* line 13, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+@media only screen and (min-width: 1024px) {
+  /* line 95, C:/Users/Dodo/Desktop/WEBCV/scss/_portfolio.scss */
+  #gl-overlay img {
+    width: auto;
+    height: 80%;
+  }
+}
+
+/* line 12, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 * {
   box-sizing: border-box;
 }
 
-/* line 18, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 17, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 .clearfix::after {
   content: "";
   clear: both;
   display: table;
 }
 
-/* line 24, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 23, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 body {
   background-color: #2d2e2e;
   font-family: "Montserrat", sans-serif;
@@ -474,10 +538,9 @@ body {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  -webkit-font-smoothing: subpixel-antialiased;
 }
 
-/* line 34, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 32, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 h1,
 h2,
 h4,
@@ -489,56 +552,64 @@ h6 {
   text-transform: uppercase;
 }
 
-/* line 45, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 43, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 h3 {
   font-weight: 100;
 }
 
-/* line 49, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 47, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 a {
   color: #a0a1a2;
   text-decoration: none;
 }
 
-/* line 53, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 51, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 a:hover, a:active {
   color: #e0a80d;
   transition: .5s;
 }
 
-/* line 60, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 58, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 .container {
   margin: 100px auto;
   max-width: 1200px;
+  padding: 0 30px;
 }
 
-/* line 64, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 63, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 .container .container-header {
-  width: 30%;
-  float: left;
-  text-align: right;
-  margin-right: 30px;
+  text-align: center;
+  margin-bottom: 50px;
   position: relative;
 }
 
-/* line 71, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+@media only screen and (min-width: 1024px) {
+  /* line 63, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+  .container .container-header {
+    float: left;
+    margin-right: 1.875em;
+    text-align: right;
+    width: 30%;
+  }
+}
+
+/* line 75, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 .container .container-header h2 {
   font-size: 1.2em;
   margin: 0;
 }
 
-/* line 75, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 79, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 .container .container-header h3 {
   font-size: .9em;
 }
 
-/* line 79, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 83, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 .container .container-header .shadow-title {
   position: absolute;
   left: 0;
-  top: 20%;
   text-align: left;
-  font-size: 9em;
+  font-size: 5em;
   line-height: 120px;
   color: #e0a80d;
   opacity: .05;
@@ -546,7 +617,7 @@ a:hover, a:active {
   z-index: 1;
 }
 
-/* line 91, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 95, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 .container .container-header .shadow-title.io-icon:before {
   position: absolute;
   content: "\f007";
@@ -555,7 +626,7 @@ a:hover, a:active {
   left: -115px;
 }
 
-/* line 99, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 103, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 .container .container-header .shadow-title.sl-icon:before {
   position: absolute;
   content: "\f085";
@@ -564,7 +635,7 @@ a:hover, a:active {
   left: -140px;
 }
 
-/* line 107, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 111, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 .container .container-header .shadow-title.tl-icon:before {
   position: absolute;
   content: "\f017";
@@ -573,7 +644,7 @@ a:hover, a:active {
   left: -140px;
 }
 
-/* line 115, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 119, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 .container .container-header .shadow-title.pf-icon:before {
   position: absolute;
   content: "\f07c";
@@ -582,31 +653,37 @@ a:hover, a:active {
   left: -140px;
 }
 
-/* line 134, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 138, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 .container .container-content {
-  width: 65%;
-  margin-left: 30px;
-  float: left;
+  width: 100%;
 }
 
-/* line 140, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+@media only screen and (min-width: 1024px) {
+  /* line 138, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+  .container .container-content {
+    float: left;
+    width: 65%;
+  }
+}
+
+/* line 149, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 .container p {
   font-size: 1em;
   margin: 0;
 }
 
-/* line 147, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 156, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 section {
   overflow: hidden;
   display: block;
 }
 
-/* line 151, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 160, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 section:nth-of-type(odd) {
   background-color: #2b2c2c;
 }
 
-/* line 185, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 165, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 section #home {
   min-height: 100vh;
   padding: 100px 25px;
@@ -617,55 +694,76 @@ section #home {
   background-attachment: fixed;
 }
 
-/* line 194, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 174, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 section #home h1 {
-  font-size: 80px;
+  font-size: 3.75em;
   color: #e0a80d;
   margin: 0;
   text-shadow: -0.8px 0.8px 0px #987209;
 }
 
-/* line 201, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
-section #home p {
-  font-size: 1.5em;
+@media only screen and (min-width: 1024px) {
+  /* line 174, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+  section #home h1 {
+    font-size: 5em;
+  }
 }
 
-/* line 204, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 185, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+section #home p {
+  font-size: 1em;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 185, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+  section #home p {
+    font-size: 1.5em;
+  }
+}
+
+/* line 192, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 section #home img {
   border-radius: 50%;
   margin-bottom: 30px;
 }
 
-/* line 208, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 196, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 section #home .my-name {
   text-transform: none;
   font-weight: 300;
   color: #a0a1a2;
-  font-size: 70px;
+  font-size: 3.125em;
   margin: 0;
   line-height: .8;
 }
 
-/* line 220, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+@media only screen and (min-width: 1024px) {
+  /* line 196, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+  section #home .my-name {
+    font-size: 4.375em;
+  }
+}
+
+/* line 212, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 .icons {
   text-align: center;
   padding: 0;
   margin: 40px 0;
 }
 
-/* line 225, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 217, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 .icons .fa {
   width: 20px;
   height: 20px;
 }
 
-/* line 230, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 222, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 .icons li {
   text-decoration: none;
   display: inline-block;
 }
 
-/* line 235, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 227, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 .icons a {
   font-size: 1.5em;
   color: #a0a1a2;
@@ -674,20 +772,21 @@ section #home .my-name {
   margin: 15px;
 }
 
-/* line 243, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 235, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 .icons a:hover {
   color: #2d2e2e;
   background-color: #e0a80d;
   transition: 0.5s;
 }
 
-/* line 250, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
+/* line 242, C:/Users/Dodo/Desktop/WEBCV/scss/style.scss */
 footer {
   text-align: center;
   padding: 1em;
   background-color: #e0a80d;
   color: #2b2c2c;
   font-weight: 500;
+  box-shadow: 0 0 12px #2d2e2e;
 }
 
 /*# sourceMappingURL=../css/style.map */

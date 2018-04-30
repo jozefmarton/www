@@ -5,8 +5,7 @@
 @import 'timeline';
 @import 'skills';
 @import 'contact';
-@import 'gallery';
-
+@import 'portfolio';
 
 
 // ------------------------GENERAL----------------------------
@@ -28,7 +27,6 @@ body {
     margin: 0;
     padding: 0;
     font-size: 16px;
-    -webkit-font-smoothing: subpixel-antialiased;
 }
 
 h1,
@@ -52,7 +50,7 @@ a {
 
 	&:hover,
 	&:active {
-		color: $color-headings;
+		color: $color-orange;
 		transition: .5s;
 	}
 }
@@ -60,13 +58,19 @@ a {
 .container {
     margin: 100px auto;
     max-width: 1200px;
+    padding: 0 30px;
 
     .container-header {
-        width: 30%;
-        float: left;
-        text-align: right;
-        margin-right: 30px;
+        text-align: center;
+        margin-bottom: 50px;
         position: relative;
+
+         @media #{$sm} {
+            float: left;
+            margin-right: 1.875em;
+            text-align: right;
+            width: 30%;
+        }
 
         h2 {
             font-size: 1.2em;
@@ -79,11 +83,11 @@ a {
         .shadow-title {
             position: absolute;
             left: 0;
-            top: 20%;
+            // top: 20%;
             text-align: left;
-            font-size: 9em;
+            font-size: 5em;     //9em
             line-height: 120px;
-            color: $color-headings;
+            color: $color-orange;
             opacity: .05;
             margin: 0;
             z-index: 1;
@@ -132,9 +136,14 @@ a {
     }
 
     .container-content {
-        width: 65%;
-        margin-left: 30px;
-        float: left;
+        width: 100%;
+
+        @media #{$sm} {
+            float: left;
+            width: 65%;
+            // margin-left: 1.875em;
+         }
+
     }
 
     p {
@@ -153,35 +162,6 @@ section {
         // z-index: -2;
     }
 
-
-// ---------------------------------------------LEFT BAR WITH ICONS-------------------------------------------------
-    // &.o-section {
-    //     position: relative;
-
-    //     .header-bg {
-    //         display: block;
-    //         width: 10%;
-    //         position: absolute;
-    //         height: 100%;
-    //         background-color: $color-headings;
-    //         box-shadow: 0px 0px 10px #000;
-    //     }
-    //     &:after {
-    //         content: "";
-    //         display: block; // width: .5em;
-    //         // height: .5em;
-    //         position: absolute;
-    //         left: 10%;
-    //         top: 70px;
-    //         z-index: 1;
-    //         border-top: 1em solid transparent;
-    //         border-bottom: 1em solid transparent;
-    //         border-right: 1em solid transparent;
-    //         border-left: 1em solid $color-headings;
-    //         filter: drop-shadow (5px 5px 10px #000);
-    //     }
-    //     }
-
     #home {
         min-height: 100vh;
         padding: 100px 25px;
@@ -192,14 +172,22 @@ section {
         background-attachment: fixed;
 
         h1 {
-            font-size: 80px;
-            color: $color-headings;
+            font-size: 3.75em;          //60px/16px
+            color: $color-orange;
             margin: 0;
-            text-shadow: -.8px .8px 0px darken( $color-headings, 15%);
+            text-shadow: -.8px .8px 0px darken( $color-orange, 15%);
+
+            @media #{$sm} {
+                font-size: 5em;
+            }
         }
 
         p {
-        	font-size: 1.5em;
+        	font-size: 1em;
+
+            @media #{$sm} {
+                font-size: 1.5em;
+            }
         }
         img {
             border-radius: 50%;
@@ -209,9 +197,13 @@ section {
             text-transform: none;
             font-weight: 300;
             color: $color-text;
-            font-size: 70px;
+            font-size: 3.125em;         //50px/16px
             margin: 0;
             line-height: .8;
+
+            @media #{$sm} {
+                font-size: 4.375em;
+            }
         }
     }
 }
@@ -242,7 +234,7 @@ section {
 
     a:hover {
         color: $color-bg-body;
-        background-color: $color-headings;
+        background-color: $color-orange;
         transition: 0.5s;
     }
 }
@@ -250,7 +242,8 @@ section {
 footer {
 	text-align: center;
 	padding: 1em;
-	background-color: $color-headings;
+	background-color: $color-orange;
 	color: $color-bg;
 	font-weight: 500;
+	box-shadow: 0 0 12px $color-bg-body;
 }

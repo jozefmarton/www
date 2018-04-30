@@ -5,6 +5,12 @@ $font-family-lato: 'Lato',sans-serif;
 
 $color-bg-body: #2d2e2e;
 $color-bg: #2b2c2c;
-$color-headings: #e0a80d;
+$color-orange: #e0a80d;
 $color-text: #a0a1a2;
 $icon-color: #3f4040;
+
+$xs: "only screen and (min-width: 768px)";
+$sm: "only screen and (min-width: 1024px)";
+$md: "only screen and (min-width: 1280px)";
+$lg: "only screen and (min-width: 1440px)";
+$xl: "only screen and (min-width: 1921px)";
