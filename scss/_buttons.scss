@@ -11,6 +11,7 @@
     overflow: hidden;
     z-index: 1;
 
+    @media #{$sm} {
     &:hover {
       color: $color-bg;
       border-bottom: 1.5px solid $color-orange;
@@ -33,20 +34,30 @@
         transition: all .4s ease;
         z-index: -1;
       }
+    }
 }
 
 // -----------------------------------------------BUTTONS - NAV, UP------------------------------------------------
 
 .btn-nav {
   font-size: 1.5em;
-  border-bottom: 1.5px solid $color-text;
+  color: $color-bg;
+
   position: fixed;
   left: 0px;
   top: 0px;
-  margin: 40px;
-    padding: 10px 9px;
-    text-transform: uppercase;
-    font-weight: 700;
+
+  padding: 10px 9px;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: $color-orange;
+
+  @media #{$sm} {
+    border-bottom: 1.5px solid $color-text;
+    color: $color-text;
+    background-color: transparent;
+    margin: 30px;
+  }
 }
 
 .btn-up {
