@@ -1,14 +1,3 @@
-// ------NAVIGATION-----------
-
-function openNav() {
-    document.getElementById("myNav").style.width = "30%";
-}
-
-/* Close when someone clicks on the "x" symbol inside the overlay */
-function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
-}
-
 // ---------------------------------------BIŽU----------------------------------------
 // https://github.com/michalsnik/aos
 AOS.init();
@@ -28,6 +17,16 @@ function upBtn() {
         ele.classList.remove("sticky-btn");
     }
 }
+
+// ------------------NAVIGATION-----------
+
+$("#nav-btn").click(function () {
+    $("html").toggleClass("nav-on");
+});
+
+$("header nav").click(function () {
+    $("html").removeClass("nav-on");
+});
 
 
 // --------------------------------BACK TO TOP BTN------------------------------------

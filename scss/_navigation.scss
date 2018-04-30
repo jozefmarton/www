@@ -2,63 +2,84 @@
 
 // ---------------------------------NAVIGATION-----------------------------------------
 
+
+
 .overlay {
     height: 100%;
-    width: 0;
+    width: 100%;
     position: fixed;
     z-index: 2;
-    left: 0;
+    left: -100vw;
     top: 0;
     background-color: $color-orange;
     background-color: transparentize($color-orange, 0.10);
-    overflow-x: hidden; /* Disable horizontal scroll */
+    overflow-x: hidden;     //vypne horizontal scroll
     transition: 0.5s;
+
+    @media #{$sm} {
+        width: 30%;
+    }
+    .nav-on &{
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
 
     .overlay-content {
-        position: relative;
+        position: absolute;
         top: 25%;
-        // width: 0%;
-        text-align: center;
+        width: 100%;
+        // text-align: center;
         margin-top: 30px;
         margin: 0 auto;
-    }
 
-    a {
-    padding: 8px;
-    font-size: 36px;
-    color: $color-bg;
-    display: block;
-    transition: 0.5s;
 
-    &:hover,
-    &:focus {
-        color: $icon-color;
-        border-left: 5px solid $icon-color;
-        border-right: 5px solid $icon-color;
+
+        a {
+        padding: 8px;
+        font-size: 36px;
+        color: $color-bg;
+        display: block;
+        transition: 0.5s;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+
+        &:hover,
+        &:focus {
+            color: $icon-color;
+            border-left: 5px solid $icon-color;
+            border-right: 5px solid $icon-color;
+        }
     }
 }
+
 
     .closebtn {
     position: absolute;
     top: 20px;
     right: 45px;
     font-size: 60px;
+    color: $color-bg;
 
     &:hover {
         border-left: none;
         border-right: none;
+        color: $icon-color;
         }
     }
 }
 
 
-@media screen and (max-height: 450px) {
-    .overlay a {
-        font-size: 20px
-    }
-    .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
-}
+
+
+// @media screen and (max-height: 450px) {
+//     .overlay a {
+//         font-size: 20px
+//     }
+//     .overlay .closebtn {
+//         font-size: 40px;
+//         top: 15px;
+//         right: 35px;
+//     }
+// }

@@ -1,3 +1,4 @@
+// ---------------------------------IMPORTS------------------------
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700|Montserrat:300,400,500,700&subset=latin-ext');
 @import 'navigation';
 @import 'variables';
@@ -9,7 +10,9 @@
 
 
 // ------------------------GENERAL----------------------------
-* {
+*,
+*:before,
+*:after {
     box-sizing: border-box;
 }
 
@@ -55,6 +58,8 @@ a {
 	}
 }
 
+// ------------------------------LAYOUT-------------------------
+
 .container {
     margin: 100px auto;
     max-width: 1200px;
@@ -91,6 +96,21 @@ a {
             opacity: .05;
             margin: 0;
             z-index: 1;
+
+            @media #{$sm} {
+                font-size: 6em;
+                left: 130px;
+            }
+
+            @media #{$md} {
+                font-size: 7em;
+                left: 130px;
+            }
+
+            @media #{$lg} {
+                font-size: 8em;
+                left: 0;
+            }
 
             &.io-icon:before {
 				position: absolute;
@@ -143,7 +163,6 @@ a {
             width: 65%;
             // margin-left: 1.875em;
          }
-
     }
 
     p {
@@ -151,7 +170,6 @@ a {
         margin: 0;
     }
 }
-
 
 section {
     overflow: hidden;
@@ -163,13 +181,16 @@ section {
     }
 
     #home {
+        text-align: center;
         min-height: 100vh;
         padding: 100px 25px;
-        background-image: url(../img/black-abstract-bg.jpg);
-        text-align: center;
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
+
+        @media #{$sm} {
+            background-image: url(../img/black-abstract-bg.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
 
         h1 {
             font-size: 3.75em;          //60px/16px
@@ -238,6 +259,8 @@ section {
         transition: 0.5s;
     }
 }
+
+// -------------------------FOOTER---------------------------
 
 footer {
 	text-align: center;
