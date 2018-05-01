@@ -357,7 +357,6 @@
 .gallery .row .gl-image {
   text-align: center;
   margin: 0 0px 20px 0;
-  z-index: 2;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -548,7 +547,6 @@ a:hover, a:active {
   color: #e0a80d;
   opacity: .05;
   margin: 0;
-  z-index: 1;
 }
 
 @media only screen and (min-width: 1024px) {
