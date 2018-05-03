@@ -318,8 +318,14 @@
   border: none;
   background-color: #e0a80d;
   height: 2em;
-  width: 30%;
+  width: 50%;
   cursor: pointer;
+}
+
+@media only screen and (min-width: 1024px) {
+  #contact .contact-form .send-btn {
+    width: 30%;
+  }
 }
 
 #contact .contact-form .send-btn:hover {
@@ -356,7 +362,11 @@
 
 .gallery .row .gl-image {
   text-align: center;
-  margin: 0 0px 20px 0;
+  margin: 0 0 20px 0;
+}
+
+.gallery .row .gl-image img {
+  width: 90%;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -393,19 +403,61 @@
 
 .gallery .row .gl-image a .img-content {
   display: block;
-  position: fixed;
-  padding-left: 2em;
-  top: 0;
+  position: absolute;
+  padding-left: 1em;
+  top: 1em;
+  left: 2.875em;
   text-align: left;
-  opacity: 0;
+  opacity: 1;
   width: 100%;
   height: 100%;
 }
 
-@media only screen and (min-width: 1024px) {
+.gallery .row .gl-image a .img-content h4,
+.gallery .row .gl-image a .img-content p {
+  color: #fff;
+  font-size: 1.3em;
+  margin: 0;
+  text-shadow: 0 2px 7px #000;
+}
+
+.gallery .row .gl-image a .img-content h4:first-child,
+.gallery .row .gl-image a .img-content p:first-child {
+  margin-top: .5em;
+}
+
+.gallery .row .gl-image a .img-content h4:last-child,
+.gallery .row .gl-image a .img-content p:last-child {
+  font-size: 1em;
+}
+
+@media only screen and (min-width: 768px) {
+  .gallery .row .gl-image a .img-content {
+    padding-left: 2em;
+    opacity: 1;
+  }
+  .gallery .row .gl-image a .img-content h4,
+  .gallery .row .gl-image a .img-content p {
+    font-size: 2em;
+  }
+  .gallery .row .gl-image a .img-content h4:first-child,
+  .gallery .row .gl-image a .img-content p:first-child {
+    margin-top: 1em;
+  }
+  .gallery .row .gl-image a .img-content h4:last-child,
+  .gallery .row .gl-image a .img-content p:last-child {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-width: 1024px) {
   .gallery .row .gl-image a .img-content {
     opacity: 0;
+    padding-left: .5em;
   }
+}
+
+@media only screen and (min-width: 768px) {
   .gallery .row .gl-image a .img-content:hover {
     opacity: 1;
     transition: 1s;
@@ -417,24 +469,6 @@
   width: 100px;
   height: 5px;
   background-color: #e0a80d;
-}
-
-.gallery .row .gl-image a .img-content h4,
-.gallery .row .gl-image a .img-content p {
-  color: #fff;
-  font-size: 2em;
-  margin: 0;
-  text-shadow: 0 2px 7px #000;
-}
-
-.gallery .row .gl-image a .img-content h4:first-child,
-.gallery .row .gl-image a .img-content p:first-child {
-  margin-top: 2em;
-}
-
-.gallery .row .gl-image a .img-content h4:last-child,
-.gallery .row .gl-image a .img-content p:last-child {
-  font-size: 1.5em;
 }
 
 #gl-overlay {
@@ -518,10 +552,12 @@ a:hover, a:active {
   text-align: center;
   margin-bottom: 50px;
   position: relative;
+  font-size: 1.5em;
 }
 
 @media only screen and (min-width: 1024px) {
   .container .container-header {
+    font-size: 1em;
     float: left;
     margin-right: 1.875em;
     text-align: right;
@@ -539,33 +575,33 @@ a:hover, a:active {
 }
 
 .container .container-header .shadow-title {
-  position: absolute;
-  left: 0;
-  text-align: left;
-  font-size: 5em;
-  line-height: 120px;
-  color: #e0a80d;
-  opacity: .05;
-  margin: 0;
+  display: none;
 }
 
 @media only screen and (min-width: 1024px) {
   .container .container-header .shadow-title {
-    font-size: 6em;
-    left: 130px;
+    display: block;
+    position: absolute;
+    left: 0;
+    text-align: left;
+    font-size: 4em;
+    line-height: 120px;
+    color: #e0a80d;
+    opacity: .05;
+    margin: 0;
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .container .container-header .shadow-title {
-    font-size: 7em;
+    font-size: 5em;
     left: 130px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .container .container-header .shadow-title {
-    font-size: 8em;
+    font-size: 7em;
     left: 0;
   }
 }
@@ -631,6 +667,9 @@ section #home {
   text-align: center;
   min-height: 100vh;
   padding: 100px 25px;
+  background-image: url(../img/black-abstract-bg.jpg);
+  background-size: auto, 100% vh;
+  background-repeat: no-repeat;
 }
 
 @media only screen and (min-width: 1024px) {

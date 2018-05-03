@@ -66,8 +66,12 @@
 			border: none;
 			background-color: $color-orange;
 			height: 2em;
-			width: 30%;
+			width: 50%;
 			cursor: pointer;
+
+			@media #{$sm} {
+				width: 30%;
+			}
 
 			&:hover {
 				box-shadow: 0 0 5px $color-orange;
