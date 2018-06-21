@@ -14,7 +14,7 @@
     background-color: $color-orange;
     background-color: transparentize($color-orange, 0.10);
     overflow-x: hidden;     //vypne horizontal scroll
-    transition: 0.5s;
+    transition: .5s;
 
     @media #{$sm} {
         width: 30%;
@@ -32,8 +32,6 @@
         // text-align: center;
         margin-top: 30px;
         margin: 0 auto;
-
-
 
         a {
         padding: 8px;
@@ -69,17 +67,3 @@
         }
     }
 }
-
-
-
-
-// @media screen and (max-height: 450px) {
-//     .overlay a {
-//         font-size: 20px
-//     }
-//     .overlay .closebtn {
-//         font-size: 40px;
-//         top: 15px;
-//         right: 35px;
-//     }
-// }
